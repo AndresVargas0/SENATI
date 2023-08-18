@@ -15,5 +15,9 @@ public class Metodo_Burbuja {
             System.out.println("Quinto Numero: "); n5 = sc.nextInt();
             //Guardar los Numeros en una lista
             int nums[]= {n1,n2,n3,n4,n5};
+            //Imprime los Numeros a Ordenar
+            System.out.print("Los Numeros a Ordenar: ");
+            for(int i=0;i<nums.length;i++){
+                System.out.print(nums[i]+" ");
         }
 }
