@@ -28,7 +28,7 @@ public class Arbol_de_Decisiones {
                 //Opcion "no" Tercera Pregunta
                 } else {
                     //Decision Final
-                    System.out.println("Nose que Pedir");
+                    System.out.println("No hay mas Opciones");
                     //Cerrar Scanner
                     scanner.close();
                 }
