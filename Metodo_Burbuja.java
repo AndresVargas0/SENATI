@@ -10,7 +10,7 @@ public class Metodo_Burbuja {
             //Recoger la Informacion desde la Consola
             System.out.println("Primer Numero: "); n1 = sc.nextInt();
             System.out.println("Segundo Numero: "); n2 = sc.nextInt();
-            System.out.println("Terver Numero: "); n3 = sc.nextInt();
+            System.out.println("Tercer Numero: "); n3 = sc.nextInt();
             System.out.println("Cuarto Numero: "); n4 = sc.nextInt();
             System.out.println("Quinto Numero: "); n5 = sc.nextInt();
             //Guardar los Numeros en una lista
@@ -22,14 +22,14 @@ public class Metodo_Burbuja {
             }
             //Bucle For para ordenar los Numeros
             for(int i=0; i < nums.length-1; i++){
-                   for(int j=0; j < (nums.length-1-i); j++){  
+                for(int j=0; j < (nums.length-1-i); j++){  
                         if(nums[j] > nums[j+1]){  
                                 int aux=nums[j];                 
                                 nums[j]=nums[j+1];           
                                 nums[j+1]=aux;
-                         }    
-                   }
-              }
+                        }    
+                }
+            }
             //Imprimir la Lista Ordenada
             System.out.print("Numeros Ordenados: ");
             for(int i=0;i<nums.length;i++){
