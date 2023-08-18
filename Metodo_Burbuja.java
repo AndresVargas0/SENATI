@@ -13,5 +13,7 @@ public class Metodo_Burbuja {
             System.out.println("Terver Numero: "); n3 = sc.nextInt();
             System.out.println("Cuarto Numero: "); n4 = sc.nextInt();
             System.out.println("Quinto Numero: "); n5 = sc.nextInt();
+            //Guardar los Numeros en una lista
+            int nums[]= {n1,n2,n3,n4,n5};
         }
 }
