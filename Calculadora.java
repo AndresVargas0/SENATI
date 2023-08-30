@@ -1,4 +1,3 @@
-package com.mycompany.senati;
 //Importar Scanner
 import java.util.Scanner;
 //Crear la clase publica Calculadora
@@ -16,8 +15,8 @@ public class Calculadora {
         float suma = N1+N2, resta = N1-N2, division = N1/N2, multiplicacion = N1*N2;
         //Imprimir Repuestas
         System.out.println("La Suma es: "+suma+
-               "\nLa Resta es: "+resta+
-               "\nLa Division es: "+division+
-               "\nLa Multiplicacion es: "+multiplicacion);
+            "\nLa Resta es: "+resta+
+            "\nLa Division es: "+division+
+            "\nLa Multiplicacion es: "+multiplicacion);
     }
 }
