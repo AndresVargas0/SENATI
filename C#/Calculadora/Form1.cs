@@ -1,129 +1,95 @@
-using System.Drawing.Text;
-
 namespace Calculadora
 {
-    public enum operacion
-    {
-        nodefinida = 0,
-        suma = 1,
-        resta = 2,
-        division = 3,
-        multiplicacion = 4,
-        modulo = 5
-    }
-
     public partial class Form1 : Form
     {
-        double valor1 = 0;
-        double valor2 = 0;
-        operacion operador = operacion.nodefinida;
-
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void LeerNumero(string numero)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            if (BoxResul.Text == "0" && BoxResul.Text != null)
+
+        }
+
+        private void agregar(string numero)
+        {
+            if (boxresul.Text == "0")
+                boxresul.Text = "";
+
+            boxresul.Text += numero;
+        }
+
+        private void buttonCE_CLick(object sender, EventArgs e)
+        {
+            boxresul.Text += "0";
+        }
+
+
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            boxresul.Text += "1";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            boxresul.Text += "2";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            boxresul.Text += "3";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            boxresul.Text += "4";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            boxresul.Text += "5";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            boxresul.Text += "6";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            boxresul.Text += "7";
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            boxresul.Text += "8";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            boxresul.Text += "9";
+        }
+
+        private void button0_Click(object sender, EventArgs e)
+        {
+            if (boxresul.Text == "0")
             {
-                BoxResul.Text = numero;
+                return;
             }
             else
             {
-                BoxResul.Text += numero;
+                boxresul.Text += "0";
             }
         }
 
-        private double EjecutarOperacion()
+        private void buttonCE_Click_1(object sender, EventArgs e)
         {
-            double resultado = 0;
-            switch (operador)
+            if (boxresul.Text != "0")
             {
-                case operacion.suma:
-                    resultado = valor1 + valor2;
-                    break;
-                case operacion.resta:
-                    resultado = valor1 - valor2;
-                    break;
-                case operacion.division:
-                    if (valor2 == 0)
-                    {
-                        MessageBox.Show("No se puede dividir entre 0");
-                        resultado = 0;
-                    }
-                    break;
-                case operacion.multiplicacion:
-                    resultado = valor1 * valor2;
-                    break;
-                case operacion.modulo:
-                    resultado = valor1 % valor2;
-                    break;
+                boxresul.Text = "0";
             }
-            return resultado;
-
-            private void Button0_CLick(object sender, EventArgs e)
-            {
-                if (BoxResul.Text == "0")
-                {
-                    return;
-                }
-                else
-                {
-                    BoxResul.Text += "0";
-                }
-            }
-
-            private void Button1_CLick(object sender, EventArgs e)
-            {
-                LeerNumero("1");
-            }
-
-            private void Button2_CLick(object sender, EventArgs e)
-            {
-                LeerNumero("2");
-            }
-
-            private void Button3_Click(object sender, EventArgs e)
-            {
-                LeerNumero("3");
-            }
-
-            private void Button4_Click(object sender, EventArgs e)
-            {
-                LeerNumero("4");
-            }
-
-            private void Button5_Click(object sender, EventArgs e)
-            {
-                LeerNumero("5");
-            }
-
-            private void Button6_Click(object sender, EventArgs e)
-            {
-                LeerNumero("6");
-            }
-
-            private void Button7_Click(object sender, EventArgs e)
-            {
-                LeerNumero("7");
-            }
-
-            private void Button3_Click(object sender, EventArgs e)
-            {
-                LeerNumero("3");
-            }
-
-
-
-            private void Form1_Load(object sender, EventArgs e)
-            {
-
-            }
-
-            private void Form1_Load_1(object sender, EventArgs e)
-            {
-
-            }
-
         }
+    }
+}
