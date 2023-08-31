@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\Calculadora\\Prueba.csproj",
-      "projectName": "Prueba",
-      "projectPath": "C:\\Users\\Alumno\\Desktop\\Calculadora\\Prueba.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\SENATI\\C#\\Calculadora\\Calculadora.csproj",
+      "projectName": "Calculadora",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\SENATI\\C#\\Calculadora\\Calculadora.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alumno\\Desktop\\Calculadora\\obj\\",
+      "outputPath": "C:\\Users\\Alumno\\Desktop\\SENATI\\C#\\Calculadora\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
