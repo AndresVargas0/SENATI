@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "L04cemsYiIxQgh12lVfFzAv6yeuQR23N1ixXpLpPKqnh9Mlt5c1YRbikeeIt1hHah5is5BY5he92WofdXnmBLw==",
+  "dgSpecHash": "GS08a6MmLK4U598xzS+Pp77v5qyr4XeFfpvljyUCrjkPfegCvaNv+//rHoYwQejic1Yj6FyN0VM65cD6eaDaxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alumno\\Desktop\\SENATI\\C#\\Calculadora\\Calculadora.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\SENATI\\C#\\Calculadora\\Calculadora.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

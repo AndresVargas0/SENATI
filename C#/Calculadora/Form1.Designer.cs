@@ -189,6 +189,7 @@
             buttonmas.TabIndex = 3;
             buttonmas.Text = "+";
             buttonmas.UseVisualStyleBackColor = false;
+            buttonmas.Click += buttonmas_Click;
             // 
             // button0
             // 
@@ -223,6 +224,7 @@
             buttonpunto.TabIndex = 3;
             buttonpunto.Text = ".";
             buttonpunto.UseVisualStyleBackColor = false;
+            buttonpunto.Click += buttonpunto_Click;
             // 
             // buttonCE
             // 
@@ -249,7 +251,7 @@
             // 
             // boxresul
             // 
-            boxresul.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            boxresul.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             boxresul.Location = new Point(27, 22);
             boxresul.Name = "boxresul";
             boxresul.Size = new Size(306, 35);
