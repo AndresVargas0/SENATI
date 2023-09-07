@@ -94,6 +94,7 @@
             buttonmenos.TabIndex = 3;
             buttonmenos.Text = "-";
             buttonmenos.UseVisualStyleBackColor = false;
+            buttonmenos.Click += buttonmenos_Click;
             // 
             // button2
             // 
@@ -178,6 +179,7 @@
             buttonmul.TabIndex = 3;
             buttonmul.Text = "x";
             buttonmul.UseVisualStyleBackColor = false;
+            buttonmul.Click += buttonmul_Click;
             // 
             // buttonmas
             // 
@@ -213,6 +215,7 @@
             buttondiv.TabIndex = 3;
             buttondiv.Text = "/";
             buttondiv.UseVisualStyleBackColor = false;
+            buttondiv.Click += buttondiv_Click;
             // 
             // buttonpunto
             // 
@@ -248,6 +251,7 @@
             buttonigual.TabIndex = 3;
             buttonigual.Text = "=";
             buttonigual.UseVisualStyleBackColor = false;
+            buttonigual.Click += buttonigual_Click;
             // 
             // boxresul
             // 
@@ -286,6 +290,7 @@
             Controls.Add(button3);
             Name = "Form1";
             Text = "Calculadora";
+            Load += Form1_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }

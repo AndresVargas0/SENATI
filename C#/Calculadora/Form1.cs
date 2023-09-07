@@ -2,9 +2,7 @@ namespace Calculadora
 {
     public partial class Form1 : Form
     {
-        double n1 = 0;
-        double n2 = 0;
-        bool unnumero = false;
+        
         public Form1()
         {
             InitializeComponent();
@@ -14,6 +12,11 @@ namespace Calculadora
         {
 
         }
+
+        bool unnumero = false;
+        double a;
+        double b;
+        string c;
 
         private void LeerNumero(string numero)
         {
@@ -101,12 +104,70 @@ namespace Calculadora
 
         private void buttonpunto_Click(object sender, EventArgs e)
         {
-            LeerNumero(buttonpunto.Text);
+            if (this.boxresul.Text.Contains('.') == false)
+            {
+                this.boxresul.Text = this.boxresul.Text + ".";
+            }
         }
 
         private void buttonmas_Click(object sender, EventArgs e)
         {
-            
+            a = Convert.ToDouble(this.boxresul.Text);
+            c = "+";
+            this.boxresul.Clear();
+            this.boxresul.Focus();
+        }
+
+        private void buttonmenos_Click(object sender, EventArgs e)
+        {
+            a = Convert.ToDouble(this.boxresul.Text);
+            c = "-";
+            this.boxresul.Clear();
+            this.boxresul.Focus();
+        }
+
+        private void buttonmul_Click(object sender, EventArgs e)
+        {
+            a = Convert.ToDouble(this.boxresul.Text);
+            c = "*";
+            this.boxresul.Clear();
+            this.boxresul.Focus();
+        }
+
+        private void buttondiv_Click(object sender, EventArgs e)
+        {
+            a = Convert.ToDouble(this.boxresul.Text);
+            c = "/";
+            this.boxresul.Clear();
+            this.boxresul.Focus();
+        }
+
+        private void buttonigual_Click(object sender, EventArgs e)
+        {
+            b = Convert.ToDouble(this.boxresul.Text);
+            switch (c)
+            {
+                case "+":
+                    this.boxresul.Text = Convert.ToString(b + a);
+                    break;
+
+                case "-":
+                    this.boxresul.Text = Convert.ToString(b - a);
+                    break;
+
+                case "*":
+                    this.boxresul.Text = Convert.ToString(b * a);
+                    break;
+
+                case "/":
+                    this.boxresul.Text = Convert.ToString(b / a);
+                    break;
+            }
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
