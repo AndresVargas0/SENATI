@@ -1,0 +1,16 @@
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\bin\x64\test\net6.0-windows\Calculadora.exe
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\bin\x64\test\net6.0-windows\Calculadora.deps.json
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\bin\x64\test\net6.0-windows\Calculadora.runtimeconfig.json
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\bin\x64\test\net6.0-windows\Calculadora.dll
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\bin\x64\test\net6.0-windows\Calculadora.pdb
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.Form1.resources
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.csproj.GenerateResource.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.AssemblyInfoInputs.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.AssemblyInfo.cs
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.dll
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\refint\Calculadora.dll
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.pdb
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\Calculadora.genruntimeconfig.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Calculadora\obj\x64\test\net6.0-windows\ref\Calculadora.dll
