@@ -10,22 +10,18 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class Login : Form
+    public partial class Registrar : Form
     {
-        public Login()
+        public Registrar()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Crear form1 = new Crear();
-            form1.Show(this);
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Crear crear = new Crear();
+            crear.Show(this);
         }
     }
 }

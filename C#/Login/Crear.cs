@@ -38,16 +38,14 @@ namespace Login
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        {}
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             //Obtiene los Datos del TextBox
-            string nombre = this.nombre.Text;
-            string correo = email.Text;
-            string pass = this.pass.Text;
+            string nombre = this.textBox1.Text;
+            string correo = textBox2.Text;
+            string pass = this.textBox3.Text;
 
             //Verifica Campos
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(correo) || string.IsNullOrEmpty(pass))
@@ -70,6 +68,12 @@ namespace Login
 
                     using (SqlCommand command = new SqlCommand(query, conn))
                     {
+
+                        // Parametros para evitar inyecciones sql
+                        command.Parameters.AddWithValue("@Nombre", nombre);
+                        command.Parameters.AddWithValue("@Correo", correo);
+                        command.Parameters.AddWithValue("@Pass", pass);
+
                         //Muestra las Filas Afectadas
                         int rowsAffected = command.ExecuteNonQuery();
 
@@ -78,7 +82,9 @@ namespace Login
                             MessageBox.Show("Usuario creado correctamente");
 
                             //Cierra la Ventana
-                            this.Close();
+                            this.Hide();
+                            Registrar registrar = new Registrar();
+                            registrar.Show(this);
                         }
                         else
                         {
@@ -102,15 +108,14 @@ namespace Login
             }
         }
 
-        private void buttoncrear_CLick(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            //Inicio inicio = new Inicio;
-            //inicio.Show(this);
+            this.Hide();
+            Registrar registrar = new Registrar();
+            registrar.Show(this);
         }
 
-        private void input_nm_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void label1_Click(object sender, EventArgs e)
+        {}
     }
 }

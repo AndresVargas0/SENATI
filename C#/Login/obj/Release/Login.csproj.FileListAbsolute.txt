@@ -1,0 +1,11 @@
+C:\Users\Hxruo\source\repos\Login\bin\Release\Login.exe.config
+C:\Users\Hxruo\source\repos\Login\bin\Release\Login.exe
+C:\Users\Hxruo\source\repos\Login\bin\Release\Login.pdb
+C:\Users\Hxruo\source\repos\Login\obj\Release\Login.csproj.AssemblyReference.cache
+C:\Users\Hxruo\source\repos\Login\obj\Release\Login.Crear.resources
+C:\Users\Hxruo\source\repos\Login\obj\Release\Login.Registrar.resources
+C:\Users\Hxruo\source\repos\Login\obj\Release\Login.Properties.Resources.resources
+C:\Users\Hxruo\source\repos\Login\obj\Release\Login.csproj.GenerateResource.cache
+C:\Users\Hxruo\source\repos\Login\obj\Release\Login.csproj.CoreCompileInputs.cache
+C:\Users\Hxruo\source\repos\Login\obj\Release\Login.exe
+C:\Users\Hxruo\source\repos\Login\obj\Release\Login.pdb

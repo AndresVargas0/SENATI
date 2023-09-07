@@ -32,13 +32,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.nombre = new System.Windows.Forms.TextBox();
-            this.pass = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.buttoncrear = new System.Windows.Forms.Button();
-            this.buttoncerrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +63,7 @@
             this.label1.Size = new System.Drawing.Size(142, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Crear Cuenta";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -74,40 +75,6 @@
             this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombres";
-            // 
-            // nombre
-            // 
-            this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombre.Location = new System.Drawing.Point(325, 82);
-            this.nombre.Margin = new System.Windows.Forms.Padding(2);
-            this.nombre.Multiline = true;
-            this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(250, 26);
-            this.nombre.TabIndex = 3;
-            this.nombre.TextChanged += new System.EventHandler(this.input_nm_TextChanged);
-            // 
-            // pass
-            // 
-            this.pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass.Location = new System.Drawing.Point(325, 198);
-            this.pass.Margin = new System.Windows.Forms.Padding(2);
-            this.pass.Multiline = true;
-            this.pass.Name = "pass";
-            this.pass.Size = new System.Drawing.Size(250, 26);
-            this.pass.TabIndex = 7;
-            // 
-            // email
-            // 
-            this.email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.Location = new System.Drawing.Point(325, 139);
-            this.email.Margin = new System.Windows.Forms.Padding(2);
-            this.email.Multiline = true;
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(250, 26);
-            this.email.TabIndex = 5;
             // 
             // label4
             // 
@@ -131,33 +98,66 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Contraseña";
             // 
-            // buttoncrear
+            // button1
             // 
-            this.buttoncrear.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.buttoncrear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttoncrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttoncrear.Location = new System.Drawing.Point(325, 247);
-            this.buttoncrear.Margin = new System.Windows.Forms.Padding(2);
-            this.buttoncrear.Name = "buttoncrear";
-            this.buttoncrear.Size = new System.Drawing.Size(106, 33);
-            this.buttoncrear.TabIndex = 8;
-            this.buttoncrear.Text = "Crear";
-            this.buttoncrear.UseVisualStyleBackColor = false;
-            this.buttoncrear.Click += new System.EventHandler(this.button1_Click);
+            this.button1.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(325, 247);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 33);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // buttoncerrar
+            // button2
             // 
-            this.buttoncerrar.BackColor = System.Drawing.Color.Crimson;
-            this.buttoncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttoncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttoncerrar.Location = new System.Drawing.Point(469, 247);
-            this.buttoncerrar.Margin = new System.Windows.Forms.Padding(2);
-            this.buttoncerrar.Name = "buttoncerrar";
-            this.buttoncerrar.Size = new System.Drawing.Size(106, 33);
-            this.buttoncerrar.TabIndex = 9;
-            this.buttoncerrar.Text = "Cerrar";
-            this.buttoncerrar.UseVisualStyleBackColor = false;
-            this.buttoncerrar.Click += new System.EventHandler(this.button1_Click);
+            this.button2.BackColor = System.Drawing.Color.Crimson;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(469, 247);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 33);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Cerrar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(325, 81);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(250, 26);
+            this.textBox1.TabIndex = 12;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(325, 139);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(250, 26);
+            this.textBox2.TabIndex = 13;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(325, 207);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(250, 26);
+            this.textBox3.TabIndex = 14;
             // 
             // Crear
             // 
@@ -165,13 +165,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(600, 303);
-            this.Controls.Add(this.buttoncerrar);
-            this.Controls.Add(this.buttoncrear);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.pass);
-            this.Controls.Add(this.nombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -189,12 +189,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox nombre;
-        private System.Windows.Forms.TextBox pass;
-        private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button buttoncrear;
-        private System.Windows.Forms.Button buttoncerrar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
