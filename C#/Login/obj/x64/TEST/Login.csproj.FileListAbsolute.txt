@@ -1,0 +1,11 @@
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\bin\x64\TEST\Login.exe.config
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\bin\x64\TEST\Login.exe
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\bin\x64\TEST\Login.pdb
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\obj\x64\TEST\Login.csproj.AssemblyReference.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\obj\x64\TEST\Login.Crear.resources
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\obj\x64\TEST\Login.Registrar.resources
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\obj\x64\TEST\Login.Properties.Resources.resources
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\obj\x64\TEST\Login.csproj.GenerateResource.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\obj\x64\TEST\Login.csproj.CoreCompileInputs.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\obj\x64\TEST\Login.exe
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Login\obj\x64\TEST\Login.pdb
