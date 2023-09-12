@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final
 {
-    public partial class Form1 : Form
+    public partial class CRUD_Estudiantes : Form
     {
-        public Form1()
+        public CRUD_Estudiantes()
         {
             InitializeComponent();
+        }
+
+        private void CRUD_Estudiantes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

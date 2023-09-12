@@ -1,0 +1,12 @@
+C:\Users\Hxruo\source\repos\Proyecto Final\bin\Debug\Proyecto Final.exe.config
+C:\Users\Hxruo\source\repos\Proyecto Final\bin\Debug\Proyecto Final.exe
+C:\Users\Hxruo\source\repos\Proyecto Final\bin\Debug\Proyecto Final.pdb
+C:\Users\Hxruo\source\repos\Proyecto Final\obj\Debug\Proyecto Final.csproj.AssemblyReference.cache
+C:\Users\Hxruo\source\repos\Proyecto Final\obj\Debug\Proyecto_Final.CRUD_Estudiantes.resources
+C:\Users\Hxruo\source\repos\Proyecto Final\obj\Debug\Proyecto_Final.Properties.Resources.resources
+C:\Users\Hxruo\source\repos\Proyecto Final\obj\Debug\Proyecto Final.csproj.GenerateResource.cache
+C:\Users\Hxruo\source\repos\Proyecto Final\obj\Debug\Proyecto Final.csproj.CoreCompileInputs.cache
+C:\Users\Hxruo\source\repos\Proyecto Final\obj\Debug\Proyecto Final.exe
+C:\Users\Hxruo\source\repos\Proyecto Final\obj\Debug\Proyecto Final.pdb
+C:\Users\Hxruo\source\repos\Proyecto Final\bin\Debug\Guna.UI2.dll
+C:\Users\Hxruo\source\repos\Proyecto Final\obj\Debug\Proyecto Final.csproj.CopyComplete
