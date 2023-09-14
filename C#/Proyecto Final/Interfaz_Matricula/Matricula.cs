@@ -97,6 +97,11 @@ namespace Proyecto_Final
             }
         }
 
+        private void cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void nombre_TextChanged(object sender, EventArgs e)
         {
 
@@ -130,11 +135,6 @@ namespace Proyecto_Final
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void cerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
