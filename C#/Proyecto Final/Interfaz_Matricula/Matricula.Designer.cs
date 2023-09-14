@@ -30,8 +30,6 @@
         {
             this.TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.nombre_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.apellido_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.apoderado_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -44,6 +42,9 @@
             this.TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cerrar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // TextBox5
@@ -87,48 +88,6 @@
             this.TextBox4.Size = new System.Drawing.Size(222, 33);
             this.TextBox4.TabIndex = 3;
             this.TextBox4.TextChanged += new System.EventHandler(this.dni_TextChanged);
-            // 
-            // TextBox6
-            // 
-            this.TextBox6.BorderRadius = 8;
-            this.TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox6.DefaultText = "";
-            this.TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox6.Location = new System.Drawing.Point(27, 301);
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.PasswordChar = '\0';
-            this.TextBox6.PlaceholderText = "";
-            this.TextBox6.SelectedText = "";
-            this.TextBox6.Size = new System.Drawing.Size(222, 33);
-            this.TextBox6.TabIndex = 5;
-            this.TextBox6.TextChanged += new System.EventHandler(this.grado_TextChanged);
-            // 
-            // TextBox7
-            // 
-            this.TextBox7.BorderRadius = 8;
-            this.TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox7.DefaultText = "";
-            this.TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox7.Location = new System.Drawing.Point(273, 301);
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.PasswordChar = '\0';
-            this.TextBox7.PlaceholderText = "";
-            this.TextBox7.SelectedText = "";
-            this.TextBox7.Size = new System.Drawing.Size(213, 33);
-            this.TextBox7.TabIndex = 7;
-            this.TextBox7.TextChanged += new System.EventHandler(this.seccion_TextChanged);
             // 
             // nombre_lbl
             // 
@@ -229,10 +188,10 @@
             this.matricular.FillColor2 = System.Drawing.Color.DarkGreen;
             this.matricular.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matricular.ForeColor = System.Drawing.Color.White;
-            this.matricular.Location = new System.Drawing.Point(33, 351);
+            this.matricular.Location = new System.Drawing.Point(27, 351);
             this.matricular.Name = "matricular";
             this.matricular.Size = new System.Drawing.Size(116, 31);
-            this.matricular.TabIndex = 15;
+            this.matricular.TabIndex = 7;
             this.matricular.Text = "MATRICULAR";
             this.matricular.Click += new System.EventHandler(this.matricular_Click);
             // 
@@ -274,7 +233,7 @@
             this.TextBox2.PlaceholderText = "";
             this.TextBox2.SelectedText = "";
             this.TextBox2.Size = new System.Drawing.Size(213, 33);
-            this.TextBox2.TabIndex = 16;
+            this.TextBox2.TabIndex = 1;
             // 
             // TextBox3
             // 
@@ -294,7 +253,73 @@
             this.TextBox3.PlaceholderText = "";
             this.TextBox3.SelectedText = "";
             this.TextBox3.Size = new System.Drawing.Size(459, 33);
-            this.TextBox3.TabIndex = 17;
+            this.TextBox3.TabIndex = 2;
+            // 
+            // ComboBox1
+            // 
+            this.ComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBox1.ItemHeight = 30;
+            this.ComboBox1.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"});
+            this.ComboBox1.Location = new System.Drawing.Point(273, 304);
+            this.ComboBox1.Name = "ComboBox1";
+            this.ComboBox1.Size = new System.Drawing.Size(213, 36);
+            this.ComboBox1.TabIndex = 6;
+            this.ComboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            // 
+            // ComboBox2
+            // 
+            this.ComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBox2.ItemHeight = 30;
+            this.ComboBox2.Items.AddRange(new object[] {
+            "1ro",
+            "2do",
+            "3ro",
+            "4to",
+            "5to",
+            "6to"});
+            this.ComboBox2.Location = new System.Drawing.Point(27, 304);
+            this.ComboBox2.Name = "ComboBox2";
+            this.ComboBox2.Size = new System.Drawing.Size(222, 36);
+            this.ComboBox2.TabIndex = 5;
+            this.ComboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
+            // 
+            // cerrar
+            // 
+            this.cerrar.BorderRadius = 5;
+            this.cerrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.cerrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.cerrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.cerrar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.cerrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.cerrar.FillColor = System.Drawing.Color.Crimson;
+            this.cerrar.FillColor2 = System.Drawing.Color.DarkRed;
+            this.cerrar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrar.ForeColor = System.Drawing.Color.White;
+            this.cerrar.Location = new System.Drawing.Point(370, 351);
+            this.cerrar.Name = "cerrar";
+            this.cerrar.Size = new System.Drawing.Size(116, 31);
+            this.cerrar.TabIndex = 8;
+            this.cerrar.Text = "CERRAR";
+            this.cerrar.Click += new System.EventHandler(this.cerrar_Click);
             // 
             // CRUD_Estudiantes
             // 
@@ -303,6 +328,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(709, 404);
+            this.Controls.Add(this.cerrar);
+            this.Controls.Add(this.ComboBox2);
+            this.Controls.Add(this.ComboBox1);
             this.Controls.Add(this.TextBox3);
             this.Controls.Add(this.TextBox2);
             this.Controls.Add(this.TextBox1);
@@ -315,8 +343,6 @@
             this.Controls.Add(this.apoderado_lbl);
             this.Controls.Add(this.apellido_lbl);
             this.Controls.Add(this.nombre_lbl);
-            this.Controls.Add(this.TextBox6);
-            this.Controls.Add(this.TextBox7);
             this.Controls.Add(this.TextBox4);
             this.Controls.Add(this.TextBox5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -332,8 +358,6 @@
         #endregion
         private Guna.UI2.WinForms.Guna2TextBox TextBox5;
         private Guna.UI2.WinForms.Guna2TextBox TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox TextBox6;
-        private Guna.UI2.WinForms.Guna2TextBox TextBox7;
         private Guna.UI2.WinForms.Guna2HtmlLabel nombre_lbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel apellido_lbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel apoderado_lbl;
@@ -346,6 +370,9 @@
         private Guna.UI2.WinForms.Guna2TextBox TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox TextBox3;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBox2;
+        private Guna.UI2.WinForms.Guna2GradientButton cerrar;
     }
 }
 

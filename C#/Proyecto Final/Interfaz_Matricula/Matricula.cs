@@ -32,8 +32,8 @@ namespace Proyecto_Final
             string Apoderado = TextBox3.Text;
             string Dni = TextBox4.Text;
             string Telefono = TextBox5.Text;
-            string Grado = TextBox6.Text;
-            string Seccion = TextBox7.Text;
+            string Grado = ComboBox2.Text;
+            string Seccion = ComboBox1.Text;
 
             if (string.IsNullOrEmpty(Nombre)||
                 string.IsNullOrEmpty(Apellido)||
@@ -122,14 +122,19 @@ namespace Proyecto_Final
 
         }
 
-        private void grado_TextChanged(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void seccion_TextChanged(object sender, EventArgs e)
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
