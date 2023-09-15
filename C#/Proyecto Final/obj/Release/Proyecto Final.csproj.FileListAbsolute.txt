@@ -1,0 +1,14 @@
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\bin\Release\Proyecto Final.exe.config
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\bin\Release\Proyecto Final.exe
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\bin\Release\Proyecto Final.pdb
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\bin\Release\Guna.UI2.dll
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto Final.csproj.AssemblyReference.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto_Final.Interfazes.Admin.resources
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto_Final.Interfazes.Login.resources
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto_Final.Properties.Resources.resources
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto Final.csproj.GenerateResource.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto Final.csproj.CoreCompileInputs.cache
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto Final.csproj.CopyComplete
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto Final.exe
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto Final.pdb
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\Release\Proyecto_Final.Interfazes.Matricula_Estudiantes.resources

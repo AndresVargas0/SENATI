@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Proyecto_Final.Interfazes;
+using System;
 using System.Windows.Forms;
 
 namespace Proyecto_Final
@@ -16,7 +14,7 @@ namespace Proyecto_Final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CRUD_Estudiantes());
+            Application.Run(new Login());
         }
     }
 }

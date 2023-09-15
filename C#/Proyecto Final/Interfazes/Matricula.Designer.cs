@@ -1,6 +1,6 @@
-﻿namespace Proyecto_Final
+﻿namespace Proyecto_Final.Interfazes
 {
-    partial class CRUD_Estudiantes
+    partial class Matricula_Estudiantes
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUD_Estudiantes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Matricula_Estudiantes));
             this.TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.nombre_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -365,8 +365,9 @@
             this.guna2CirclePictureBox1.TabIndex = 15;
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.UseTransparentBackground = true;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
-            // CRUD_Estudiantes
+            // Matricula_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -392,8 +393,9 @@
             this.Controls.Add(this.nombre_lbl);
             this.Controls.Add(this.TextBox4);
             this.Controls.Add(this.TextBox5);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "CRUD_Estudiantes";
+            this.Name = "Matricula_Estudiantes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Matricula_Estudiantes";
             this.Load += new System.EventHandler(this.CRUD_Estudiantes_Load);
