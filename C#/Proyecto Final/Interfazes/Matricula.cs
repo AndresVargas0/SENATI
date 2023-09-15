@@ -46,12 +46,10 @@ namespace Proyecto_Final.Interfazes
                 {
                     try
                     {
-                        //Insertar Datos
                         string query = "INSERT INTO Estudiantes_Matriculados (Nombre,Apellido,Apoderado,Dni,Telefono,Grado,Seccion) VALUES (@Nombre,@Apellido,@Apoderado,@Dni,@Telefono,@Grado,@Seccion)";
 
                         using (SqlCommand command = new SqlCommand(query, conn))
                         {
-                            //Parametros a usar en la Consulta
                             command.Parameters.AddWithValue("@Nombre", Nombre);
                             command.Parameters.AddWithValue("@Apellido", Apellido);
                             command.Parameters.AddWithValue("@Apoderado", Apoderado);
@@ -60,8 +58,6 @@ namespace Proyecto_Final.Interfazes
                             command.Parameters.AddWithValue("@Grado", Grado);
                             command.Parameters.AddWithValue("@Seccion", Seccion);
 
-
-                            //Muestra las Filas Afectadas
                             int rowsAffected = command.ExecuteNonQuery();
 
                             if (rowsAffected > 0)
@@ -80,7 +76,6 @@ namespace Proyecto_Final.Interfazes
                     }
                     finally
                     {
-                        //Cierra la Conexion
                         conn.Close();
                     }
                 }

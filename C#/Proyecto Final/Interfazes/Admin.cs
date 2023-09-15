@@ -62,12 +62,12 @@ namespace Proyecto_Final.Interfazes
             SqlConnection conn = conexion.ObtenerConexion();
             conn.Open();
 
-            
-
             try
             {
-                string update = "UPDATE Estudiantes_Matriculados SET Grado = @Grado, Seccion = @Seccion WHERE DNI = @Dni;";
+                string update = "UPDATE Estudiantes_Matriculados SET Grado = @Grado, Seccion = @Seccion WHERE DNI = @Dni";
+                string actualizar = "SELECT * FROM Estudiantes_Matriculados";
                 SqlCommand command = new SqlCommand(update, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(actualizar, conn);
 
                 command.Parameters.AddWithValue("@DNI", Dni);
                 command.Parameters.AddWithValue("@Grado", Grado);
@@ -83,6 +83,7 @@ namespace Proyecto_Final.Interfazes
                 {
                     MessageBox.Show("Error, Datos Incorrectos");
                 }
+
             }
             catch (Exception ex)
             {
@@ -138,7 +139,6 @@ namespace Proyecto_Final.Interfazes
                             command.Parameters.AddWithValue("@Grado", Grado);
                             command.Parameters.AddWithValue("@Seccion", Seccion);
 
-
                             //Muestra las Filas Afectadas
                             int rowsAffected = command.ExecuteNonQuery();
 
@@ -158,11 +158,25 @@ namespace Proyecto_Final.Interfazes
                     }
                     finally
                     {
-                        //Cierra la Conexion
                         conn.Close();
                     }
                 }
             }
+        }
+
+        private void salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void tabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void estudiantesMatriculadosBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
