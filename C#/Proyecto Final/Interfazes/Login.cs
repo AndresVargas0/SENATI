@@ -20,13 +20,26 @@ namespace Proyecto_Final.Interfazes
             String Correo = correo.Text;
             String Contraseña = contraseña.Text;
             String Admin = "Admin";
-            String Admin_pass = "1234";
+            String Admin_pass = "admin";
+            String Profe = "Profe1";
+            String Profe_pass = "profe1";
 
             if (Correo == Admin && Contraseña == Admin_pass)
             {
                 this.Hide();
                 Admin admin = new Admin();
                 admin.Show();
+            }
+            else
+            {
+                MessageBox.Show("Error (Datos Incorrectos)");
+            }
+
+            if (Correo == Profe && Contraseña == Profe_pass)
+            {
+                this.Hide();
+                Matricula_Estudiantes matricula = new Matricula_Estudiantes();
+                matricula.Show();
             }
             else
             {

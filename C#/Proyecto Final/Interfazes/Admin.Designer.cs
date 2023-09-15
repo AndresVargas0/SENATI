@@ -45,7 +45,7 @@
             this.estudiantes_MatriculadosTableAdapter = new Proyecto_Final.BDDataSetTableAdapters.Estudiantes_MatriculadosTableAdapter();
             this.actualizar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.eliminar = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.editar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.matricular = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -210,35 +210,36 @@
             this.eliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.eliminar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.eliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.eliminar.FillColor = System.Drawing.Color.Crimson;
-            this.eliminar.FillColor2 = System.Drawing.Color.DarkRed;
+            this.eliminar.FillColor = System.Drawing.Color.Silver;
+            this.eliminar.FillColor2 = System.Drawing.Color.Black;
             this.eliminar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminar.ForeColor = System.Drawing.Color.White;
-            this.eliminar.Location = new System.Drawing.Point(516, 94);
+            this.eliminar.Location = new System.Drawing.Point(516, 96);
             this.eliminar.Name = "eliminar";
             this.eliminar.Size = new System.Drawing.Size(116, 31);
             this.eliminar.TabIndex = 10;
             this.eliminar.Text = "ELIMINAR";
             this.eliminar.Click += new System.EventHandler(this.eliminar_Click);
             // 
-            // editar
+            // matricular
             // 
-            this.editar.BackColor = System.Drawing.Color.Transparent;
-            this.editar.BorderRadius = 5;
-            this.editar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.editar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.editar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.editar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.editar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.editar.FillColor = System.Drawing.Color.LightGreen;
-            this.editar.FillColor2 = System.Drawing.Color.DarkGreen;
-            this.editar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editar.ForeColor = System.Drawing.Color.White;
-            this.editar.Location = new System.Drawing.Point(516, 147);
-            this.editar.Name = "editar";
-            this.editar.Size = new System.Drawing.Size(116, 31);
-            this.editar.TabIndex = 11;
-            this.editar.Text = "EDITAR";
+            this.matricular.BackColor = System.Drawing.Color.Transparent;
+            this.matricular.BorderRadius = 5;
+            this.matricular.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.matricular.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.matricular.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.matricular.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.matricular.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.matricular.FillColor = System.Drawing.Color.LightGreen;
+            this.matricular.FillColor2 = System.Drawing.Color.DarkGreen;
+            this.matricular.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matricular.ForeColor = System.Drawing.Color.White;
+            this.matricular.Location = new System.Drawing.Point(516, 147);
+            this.matricular.Name = "matricular";
+            this.matricular.Size = new System.Drawing.Size(116, 31);
+            this.matricular.TabIndex = 11;
+            this.matricular.Text = "MATRICULAR";
+            this.matricular.Click += new System.EventHandler(this.matricular_Click);
             // 
             // ComboBox2
             // 
@@ -502,7 +503,7 @@
             this.Controls.Add(this.nombre_lbl);
             this.Controls.Add(this.TextBox4);
             this.Controls.Add(this.TextBox5);
-            this.Controls.Add(this.editar);
+            this.Controls.Add(this.matricular);
             this.Controls.Add(this.eliminar);
             this.Controls.Add(this.actualizar);
             this.Controls.Add(this.guna2DataGridView1);
@@ -533,7 +534,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn seccionDataGridViewTextBoxColumn;
         private Guna.UI2.WinForms.Guna2GradientButton actualizar;
         private Guna.UI2.WinForms.Guna2GradientButton eliminar;
-        private Guna.UI2.WinForms.Guna2GradientButton editar;
+        private Guna.UI2.WinForms.Guna2GradientButton matricular;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox2;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox1;
         private Guna.UI2.WinForms.Guna2TextBox TextBox3;
