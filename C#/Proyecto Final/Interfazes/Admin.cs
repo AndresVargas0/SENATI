@@ -121,6 +121,18 @@ namespace Proyecto_Final.Interfazes
                 ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
                 SqlConnection conn = conexion.ObtenerConexion();
 
+                tabla.DataSource = null;
+
+                string selectQuery = "SELECT * FROM Estudiantes_Matriculados";
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, conn))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        tabla.DataSource = dataTable;
+                    }
+                }
                 if (conn != null)
                 {
                     try

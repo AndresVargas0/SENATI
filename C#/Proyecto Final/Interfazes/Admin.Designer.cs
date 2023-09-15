@@ -544,7 +544,6 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
         private Guna.UI2.WinForms.Guna2DataGridView tabla;
         private BDDataSet bDDataSet;
         private System.Windows.Forms.BindingSource estudiantesMatriculadosBindingSource;
