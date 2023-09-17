@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.correo = new Guna.UI2.WinForms.Guna2TextBox();
@@ -36,6 +37,8 @@
             this.contaseña_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ingresar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.salir = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,6 +179,24 @@
             this.salir.Text = "SALIR";
             this.salir.Click += new System.EventHandler(this.salir_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label1.Location = new System.Drawing.Point(652, 384);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 21);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Time";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.Login_Load);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,6 +204,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(730, 417);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.salir);
             this.Controls.Add(this.ingresar);
             this.Controls.Add(this.contaseña_lbl);
@@ -208,5 +230,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel contaseña_lbl;
         private Guna.UI2.WinForms.Guna2GradientButton ingresar;
         private Guna.UI2.WinForms.Guna2GradientButton salir;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

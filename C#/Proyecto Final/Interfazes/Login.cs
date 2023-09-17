@@ -12,7 +12,8 @@ namespace Proyecto_Final.Interfazes
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            timer1.Start();
+            label1.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
 
         private void ingresar_Click(object sender, EventArgs e)
@@ -45,6 +46,11 @@ namespace Proyecto_Final.Interfazes
         private void salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
     }
 }
