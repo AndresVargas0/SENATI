@@ -189,6 +189,7 @@
             // 
             // actualizar
             // 
+            this.actualizar.Animated = true;
             this.actualizar.BackColor = System.Drawing.Color.Transparent;
             this.actualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("actualizar.BackgroundImage")));
             this.actualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -203,7 +204,7 @@
             this.actualizar.FillColor2 = System.Drawing.Color.Transparent;
             this.actualizar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.actualizar.ForeColor = System.Drawing.Color.White;
-            this.actualizar.Location = new System.Drawing.Point(536, 183);
+            this.actualizar.Location = new System.Drawing.Point(530, 194);
             this.actualizar.Name = "actualizar";
             this.actualizar.Size = new System.Drawing.Size(34, 34);
             this.actualizar.TabIndex = 9;
@@ -211,6 +212,7 @@
             // 
             // eliminar
             // 
+            this.eliminar.Animated = true;
             this.eliminar.BackColor = System.Drawing.Color.Transparent;
             this.eliminar.BorderRadius = 5;
             this.eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -223,6 +225,7 @@
             this.eliminar.FillColor2 = System.Drawing.Color.Black;
             this.eliminar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminar.ForeColor = System.Drawing.Color.White;
+            this.eliminar.Image = ((System.Drawing.Image)(resources.GetObject("eliminar.Image")));
             this.eliminar.Location = new System.Drawing.Point(516, 141);
             this.eliminar.Name = "eliminar";
             this.eliminar.Size = new System.Drawing.Size(116, 31);
@@ -232,6 +235,7 @@
             // 
             // matricular
             // 
+            this.matricular.Animated = true;
             this.matricular.BackColor = System.Drawing.Color.Transparent;
             this.matricular.BorderRadius = 5;
             this.matricular.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -244,6 +248,7 @@
             this.matricular.FillColor2 = System.Drawing.Color.DarkGreen;
             this.matricular.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matricular.ForeColor = System.Drawing.Color.White;
+            this.matricular.Image = ((System.Drawing.Image)(resources.GetObject("matricular.Image")));
             this.matricular.Location = new System.Drawing.Point(516, 45);
             this.matricular.Name = "matricular";
             this.matricular.Size = new System.Drawing.Size(116, 31);
@@ -314,6 +319,8 @@
             this.TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox3.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox3.IconLeft")));
+            this.TextBox3.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox3.Location = new System.Drawing.Point(23, 118);
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.PasswordChar = '\0';
@@ -336,6 +343,8 @@
             this.TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox2.IconLeft")));
+            this.TextBox2.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox2.Location = new System.Drawing.Point(269, 45);
             this.TextBox2.Name = "TextBox2";
             this.TextBox2.PasswordChar = '\0';
@@ -358,6 +367,8 @@
             this.TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox1.IconLeft")));
+            this.TextBox1.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox1.Location = new System.Drawing.Point(23, 45);
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.PasswordChar = '\0';
@@ -464,6 +475,8 @@
             this.TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox4.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox4.IconLeft")));
+            this.TextBox4.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox4.Location = new System.Drawing.Point(23, 184);
             this.TextBox4.Name = "TextBox4";
             this.TextBox4.PasswordChar = '\0';
@@ -486,6 +499,8 @@
             this.TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox5.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox5.IconLeft")));
+            this.TextBox5.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox5.Location = new System.Drawing.Point(269, 184);
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.PasswordChar = '\0';
@@ -496,6 +511,7 @@
             // 
             // salir
             // 
+            this.salir.Animated = true;
             this.salir.BackColor = System.Drawing.Color.Transparent;
             this.salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("salir.BackgroundImage")));
             this.salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -510,7 +526,7 @@
             this.salir.FillColor2 = System.Drawing.Color.Transparent;
             this.salir.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.salir.ForeColor = System.Drawing.Color.White;
-            this.salir.Location = new System.Drawing.Point(576, 184);
+            this.salir.Location = new System.Drawing.Point(582, 195);
             this.salir.Name = "salir";
             this.salir.Size = new System.Drawing.Size(34, 34);
             this.salir.TabIndex = 28;
@@ -524,6 +540,7 @@
             // 
             // Editar
             // 
+            this.Editar.Animated = true;
             this.Editar.BackColor = System.Drawing.Color.Transparent;
             this.Editar.BorderRadius = 5;
             this.Editar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -536,6 +553,7 @@
             this.Editar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Editar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Editar.ForeColor = System.Drawing.Color.White;
+            this.Editar.Image = ((System.Drawing.Image)(resources.GetObject("Editar.Image")));
             this.Editar.Location = new System.Drawing.Point(516, 94);
             this.Editar.Name = "Editar";
             this.Editar.Size = new System.Drawing.Size(116, 31);
@@ -568,6 +586,7 @@
             this.Controls.Add(this.actualizar);
             this.Controls.Add(this.tabla);
             this.Name = "Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
