@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.tabla = new Guna.UI2.WinForms.Guna2DataGridView();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +62,8 @@
             this.TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.salir = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Editar = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.estudiantesMatriculadosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).BeginInit();
@@ -187,27 +190,30 @@
             // actualizar
             // 
             this.actualizar.BackColor = System.Drawing.Color.Transparent;
+            this.actualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("actualizar.BackgroundImage")));
+            this.actualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.actualizar.BorderRadius = 5;
+            this.actualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.actualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.actualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.actualizar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.actualizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.actualizar.FillColor = System.Drawing.Color.LightSteelBlue;
-            this.actualizar.FillColor2 = System.Drawing.Color.RoyalBlue;
-            this.actualizar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actualizar.FillColor = System.Drawing.Color.Transparent;
+            this.actualizar.FillColor2 = System.Drawing.Color.Transparent;
+            this.actualizar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.actualizar.ForeColor = System.Drawing.Color.White;
-            this.actualizar.Location = new System.Drawing.Point(516, 45);
+            this.actualizar.Location = new System.Drawing.Point(536, 183);
             this.actualizar.Name = "actualizar";
-            this.actualizar.Size = new System.Drawing.Size(116, 31);
+            this.actualizar.Size = new System.Drawing.Size(34, 34);
             this.actualizar.TabIndex = 9;
-            this.actualizar.Text = "ACTUALIZAR";
             this.actualizar.Click += new System.EventHandler(this.actualizar_Click);
             // 
             // eliminar
             // 
             this.eliminar.BackColor = System.Drawing.Color.Transparent;
             this.eliminar.BorderRadius = 5;
+            this.eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.eliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.eliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.eliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -217,7 +223,7 @@
             this.eliminar.FillColor2 = System.Drawing.Color.Black;
             this.eliminar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminar.ForeColor = System.Drawing.Color.White;
-            this.eliminar.Location = new System.Drawing.Point(516, 96);
+            this.eliminar.Location = new System.Drawing.Point(516, 141);
             this.eliminar.Name = "eliminar";
             this.eliminar.Size = new System.Drawing.Size(116, 31);
             this.eliminar.TabIndex = 10;
@@ -228,6 +234,7 @@
             // 
             this.matricular.BackColor = System.Drawing.Color.Transparent;
             this.matricular.BorderRadius = 5;
+            this.matricular.Cursor = System.Windows.Forms.Cursors.Hand;
             this.matricular.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.matricular.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.matricular.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -237,7 +244,7 @@
             this.matricular.FillColor2 = System.Drawing.Color.DarkGreen;
             this.matricular.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matricular.ForeColor = System.Drawing.Color.White;
-            this.matricular.Location = new System.Drawing.Point(516, 147);
+            this.matricular.Location = new System.Drawing.Point(516, 45);
             this.matricular.Name = "matricular";
             this.matricular.Size = new System.Drawing.Size(116, 31);
             this.matricular.TabIndex = 11;
@@ -490,28 +497,57 @@
             // salir
             // 
             this.salir.BackColor = System.Drawing.Color.Transparent;
+            this.salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("salir.BackgroundImage")));
+            this.salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.salir.BorderRadius = 5;
+            this.salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.salir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.salir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.salir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.salir.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.salir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.salir.FillColor = System.Drawing.Color.Crimson;
-            this.salir.FillColor2 = System.Drawing.Color.DarkRed;
-            this.salir.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salir.FillColor = System.Drawing.Color.Transparent;
+            this.salir.FillColor2 = System.Drawing.Color.Transparent;
+            this.salir.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.salir.ForeColor = System.Drawing.Color.White;
-            this.salir.Location = new System.Drawing.Point(516, 197);
+            this.salir.Location = new System.Drawing.Point(576, 184);
             this.salir.Name = "salir";
-            this.salir.Size = new System.Drawing.Size(116, 31);
+            this.salir.Size = new System.Drawing.Size(34, 34);
             this.salir.TabIndex = 28;
-            this.salir.Text = "SALIR";
             this.salir.Click += new System.EventHandler(this.salir_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Editar
+            // 
+            this.Editar.BackColor = System.Drawing.Color.Transparent;
+            this.Editar.BorderRadius = 5;
+            this.Editar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Editar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Editar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Editar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Editar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Editar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Editar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Editar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Editar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Editar.ForeColor = System.Drawing.Color.White;
+            this.Editar.Location = new System.Drawing.Point(516, 94);
+            this.Editar.Name = "Editar";
+            this.Editar.Size = new System.Drawing.Size(116, 31);
+            this.Editar.TabIndex = 29;
+            this.Editar.Text = "EDITAR";
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 515);
+            this.Controls.Add(this.Editar);
             this.Controls.Add(this.salir);
             this.Controls.Add(this.ComboBox2);
             this.Controls.Add(this.ComboBox1);
@@ -573,5 +609,7 @@
         private Guna.UI2.WinForms.Guna2TextBox TextBox4;
         private Guna.UI2.WinForms.Guna2TextBox TextBox5;
         private Guna.UI2.WinForms.Guna2GradientButton salir;
+        private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2GradientButton Editar;
     }
 }

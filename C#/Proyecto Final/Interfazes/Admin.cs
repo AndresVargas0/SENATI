@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Data;
+using System.Data.OleDb;
 using System.Data.SqlClient;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using TheArtOfDevHtmlRenderer.Adapters;
 
 namespace Proyecto_Final.Interfazes
 {
@@ -14,7 +17,6 @@ namespace Proyecto_Final.Interfazes
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            this.estudiantes_MatriculadosTableAdapter.Fill(this.bDDataSet.Estudiantes_Matriculados);
         }
 
         private void eliminar_Click(object sender, EventArgs e)
@@ -23,19 +25,15 @@ namespace Proyecto_Final.Interfazes
 
             ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
             SqlConnection conn = conexion.ObtenerConexion();
-            conn.Open();
 
             try
             {
-                string delete = "DELETE FROM Estudiantes_Mattriculados WHERE Dni = @Dni;";
+                string delete = "DELETE FROM Estudiantes_Matriculados WHERE Dni = @Dni;";
                 SqlCommand command = new SqlCommand(delete, conn);
 
                 command.Parameters.AddWithValue("@Dni", Dni);
 
                 int rowsAffected = command.ExecuteNonQuery();
-
-                DataTable datatable = new DataTable();
-                estudiantesMatriculadosBindingSource.DataSource = datatable;
 
                 if (rowsAffected > 0)
                 {
@@ -54,44 +52,19 @@ namespace Proyecto_Final.Interfazes
 
         private void actualizar_Click(object sender, EventArgs e)
         {
-            String Dni = TextBox4.Text;
-            String Grado = ComboBox2.Text;
-            String Seccion = ComboBox1.Text;
-
             ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
             SqlConnection conn = conexion.ObtenerConexion();
-            conn.Open();
 
-            try
+            tabla.DataSource = null;
+
+            string selectQuery = "SELECT * FROM Estudiantes_Matriculados";
             {
-                string update = "UPDATE Estudiantes_Matriculados SET Grado = @Grado, Seccion = @Seccion WHERE DNI = @Dni";
-                string actualizar = "SELECT * FROM Estudiantes_Matriculados";
-                SqlCommand command = new SqlCommand(update, conn);
-                SqlDataAdapter adapter = new SqlDataAdapter(actualizar, conn);
-
-                command.Parameters.AddWithValue("@DNI", Dni);
-                command.Parameters.AddWithValue("@Grado", Grado);
-                command.Parameters.AddWithValue("@Seccion", Seccion);
-
-                int rowsAffected = command.ExecuteNonQuery();
-
-                if (rowsAffected > 0)
+                using (SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, conn))
                 {
-                    MessageBox.Show("Informacion del Alumno Actualizada Correctamente.");
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    tabla.DataSource = dataTable;
                 }
-                else
-                {
-                    MessageBox.Show("Error, Datos Incorrectos");
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al Actualizar: " + ex.Message);
-            }
-            finally
-            {
-                conn.Close();
             }
         }
 
@@ -121,18 +94,6 @@ namespace Proyecto_Final.Interfazes
                 ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
                 SqlConnection conn = conexion.ObtenerConexion();
 
-                tabla.DataSource = null;
-
-                string selectQuery = "SELECT * FROM Estudiantes_Matriculados";
-                {
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, conn))
-                    {
-                        DataTable dataTable = new DataTable();
-                        adapter.Fill(dataTable);
-
-                        tabla.DataSource = dataTable;
-                    }
-                }
                 if (conn != null)
                 {
                     try
@@ -162,19 +123,18 @@ namespace Proyecto_Final.Interfazes
                             {
                                 MessageBox.Show("No se Pudo Registrar al Alumno");
                             }
+                            
                         }
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show("Error: " + ex.Message);
                     }
-                    finally
-                    {
-                        conn.Close();
-                    }
                 }
             }
         }
+
+
 
         private void salir_Click(object sender, EventArgs e)
         {
@@ -189,6 +149,11 @@ namespace Proyecto_Final.Interfazes
         private void estudiantesMatriculadosBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Invalidate();
         }
     }
 }
