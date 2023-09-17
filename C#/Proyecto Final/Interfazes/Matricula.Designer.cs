@@ -64,6 +64,8 @@
             this.TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox5.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox5.IconLeft")));
+            this.TextBox5.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox5.Location = new System.Drawing.Point(293, 223);
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.PasswordChar = '\0';
@@ -87,6 +89,8 @@
             this.TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox4.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox4.IconLeft")));
+            this.TextBox4.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox4.Location = new System.Drawing.Point(47, 223);
             this.TextBox4.Name = "TextBox4";
             this.TextBox4.PasswordChar = '\0';
@@ -186,7 +190,7 @@
             this.titulo_lbl.BackColor = System.Drawing.Color.Transparent;
             this.titulo_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulo_lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.titulo_lbl.Location = new System.Drawing.Point(56, 14);
+            this.titulo_lbl.Location = new System.Drawing.Point(56, 21);
             this.titulo_lbl.Name = "titulo_lbl";
             this.titulo_lbl.Size = new System.Drawing.Size(439, 22);
             this.titulo_lbl.TabIndex = 14;
@@ -197,6 +201,7 @@
             this.matricular.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.matricular.BackColor = System.Drawing.Color.Transparent;
             this.matricular.BorderRadius = 5;
+            this.matricular.DefaultAutoSize = true;
             this.matricular.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.matricular.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.matricular.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -206,9 +211,11 @@
             this.matricular.FillColor2 = System.Drawing.Color.DarkGreen;
             this.matricular.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matricular.ForeColor = System.Drawing.Color.White;
+            this.matricular.Image = ((System.Drawing.Image)(resources.GetObject("matricular.Image")));
             this.matricular.Location = new System.Drawing.Point(572, 246);
             this.matricular.Name = "matricular";
-            this.matricular.Size = new System.Drawing.Size(116, 31);
+            this.matricular.Padding = new System.Windows.Forms.Padding(2);
+            this.matricular.Size = new System.Drawing.Size(133, 30);
             this.matricular.TabIndex = 7;
             this.matricular.Text = "MATRICULAR";
             this.matricular.Click += new System.EventHandler(this.matricular_Click);
@@ -227,6 +234,8 @@
             this.TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox1.IconLeft")));
+            this.TextBox1.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox1.Location = new System.Drawing.Point(47, 84);
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.PasswordChar = '\0';
@@ -249,6 +258,8 @@
             this.TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox2.IconLeft")));
+            this.TextBox2.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox2.Location = new System.Drawing.Point(293, 84);
             this.TextBox2.Name = "TextBox2";
             this.TextBox2.PasswordChar = '\0';
@@ -271,6 +282,8 @@
             this.TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox3.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextBox3.IconLeft")));
+            this.TextBox3.IconLeftSize = new System.Drawing.Size(15, 15);
             this.TextBox3.Location = new System.Drawing.Point(47, 157);
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.PasswordChar = '\0';
@@ -335,6 +348,7 @@
             this.cerrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cerrar.BackColor = System.Drawing.Color.Transparent;
             this.cerrar.BorderRadius = 5;
+            this.cerrar.DefaultAutoSize = true;
             this.cerrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.cerrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.cerrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -344,9 +358,11 @@
             this.cerrar.FillColor2 = System.Drawing.Color.DarkRed;
             this.cerrar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cerrar.ForeColor = System.Drawing.Color.White;
-            this.cerrar.Location = new System.Drawing.Point(572, 296);
+            this.cerrar.Image = ((System.Drawing.Image)(resources.GetObject("cerrar.Image")));
+            this.cerrar.Location = new System.Drawing.Point(584, 296);
             this.cerrar.Name = "cerrar";
-            this.cerrar.Size = new System.Drawing.Size(116, 31);
+            this.cerrar.Padding = new System.Windows.Forms.Padding(2);
+            this.cerrar.Size = new System.Drawing.Size(104, 30);
             this.cerrar.TabIndex = 8;
             this.cerrar.Text = "CERRAR";
             this.cerrar.Click += new System.EventHandler(this.cerrar_Click);
