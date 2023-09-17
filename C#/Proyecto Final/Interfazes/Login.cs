@@ -25,7 +25,13 @@ namespace Proyecto_Final.Interfazes
             String Profe = "Profe1";
             String Profe_pass = "profe1";
 
-            if (Correo == Admin || Contraseña == Admin_pass)
+            if (string.IsNullOrEmpty(Correo) || string.IsNullOrEmpty(Contraseña))
+            {
+                MessageBox.Show("Ingrese su Usuario y Contraseña");
+                return;
+            }
+
+            else if (Correo == Admin || Contraseña == Admin_pass)
             {
                 this.Hide();
                 Admin admin = new Admin();
@@ -39,7 +45,7 @@ namespace Proyecto_Final.Interfazes
             }
             else
             {
-                MessageBox.Show("Error (Datos Incorrectos)");
+                MessageBox.Show("Credenciales Incorrectas");
             }
         }
 

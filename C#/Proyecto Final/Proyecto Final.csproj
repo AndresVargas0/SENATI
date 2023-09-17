@@ -122,20 +122,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\school_bg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\colegio.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1540486907gtJMyRGg.jpg" />
+    <Content Include="Resources\1540486907gtJMyRGg.jpg" />
+    <Content Include="Resources\cerrar.png" />
+    <Content Include="Resources\colegio.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\school_bg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
