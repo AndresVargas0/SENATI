@@ -62,7 +62,6 @@
             this.TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.salir = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Editar = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.estudiantesMatriculadosBindingSource)).BeginInit();
@@ -71,11 +70,11 @@
             // 
             // tabla
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
             this.tabla.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.tabla.AutoGenerateColumns = false;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -94,40 +93,41 @@
             this.seccionDataGridViewTextBoxColumn});
             this.tabla.DataSource = this.estudiantesMatriculadosBindingSource;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.tabla.DefaultCellStyle = dataGridViewCellStyle6;
-            this.tabla.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.tabla.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
             this.tabla.Location = new System.Drawing.Point(23, 303);
             this.tabla.Name = "tabla";
             this.tabla.RowHeadersVisible = false;
             this.tabla.Size = new System.Drawing.Size(609, 191);
             this.tabla.TabIndex = 0;
-            this.tabla.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.tabla.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.WetAsphalt;
+            this.tabla.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
             this.tabla.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.tabla.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.tabla.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.tabla.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.tabla.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.tabla.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.tabla.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.tabla.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
+            this.tabla.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.tabla.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.tabla.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabla.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.tabla.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.tabla.ThemeStyle.HeaderStyle.Height = 15;
             this.tabla.ThemeStyle.ReadOnly = false;
-            this.tabla.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.tabla.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.tabla.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tabla.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabla.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tabla.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.tabla.ThemeStyle.RowsStyle.Height = 22;
-            this.tabla.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.tabla.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tabla.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
+            this.tabla.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_CellContentClick);
             // 
             // nombreDataGridViewTextBoxColumn
@@ -216,19 +216,21 @@
             this.eliminar.BackColor = System.Drawing.Color.Transparent;
             this.eliminar.BorderRadius = 5;
             this.eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.eliminar.DefaultAutoSize = true;
             this.eliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.eliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.eliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.eliminar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.eliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.eliminar.FillColor = System.Drawing.Color.Silver;
-            this.eliminar.FillColor2 = System.Drawing.Color.Black;
+            this.eliminar.FillColor = System.Drawing.Color.Transparent;
+            this.eliminar.FillColor2 = System.Drawing.Color.Silver;
             this.eliminar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminar.ForeColor = System.Drawing.Color.White;
             this.eliminar.Image = ((System.Drawing.Image)(resources.GetObject("eliminar.Image")));
             this.eliminar.Location = new System.Drawing.Point(516, 141);
             this.eliminar.Name = "eliminar";
-            this.eliminar.Size = new System.Drawing.Size(116, 31);
+            this.eliminar.Padding = new System.Windows.Forms.Padding(2);
+            this.eliminar.Size = new System.Drawing.Size(113, 30);
             this.eliminar.TabIndex = 10;
             this.eliminar.Text = "ELIMINAR";
             this.eliminar.Click += new System.EventHandler(this.eliminar_Click);
@@ -239,19 +241,21 @@
             this.matricular.BackColor = System.Drawing.Color.Transparent;
             this.matricular.BorderRadius = 5;
             this.matricular.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.matricular.DefaultAutoSize = true;
             this.matricular.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.matricular.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.matricular.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.matricular.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.matricular.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.matricular.FillColor = System.Drawing.Color.LightGreen;
-            this.matricular.FillColor2 = System.Drawing.Color.DarkGreen;
+            this.matricular.FillColor = System.Drawing.Color.Transparent;
+            this.matricular.FillColor2 = System.Drawing.Color.LimeGreen;
             this.matricular.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matricular.ForeColor = System.Drawing.Color.White;
             this.matricular.Image = ((System.Drawing.Image)(resources.GetObject("matricular.Image")));
-            this.matricular.Location = new System.Drawing.Point(516, 45);
+            this.matricular.Location = new System.Drawing.Point(495, 48);
             this.matricular.Name = "matricular";
-            this.matricular.Size = new System.Drawing.Size(116, 31);
+            this.matricular.Padding = new System.Windows.Forms.Padding(2);
+            this.matricular.Size = new System.Drawing.Size(133, 30);
             this.matricular.TabIndex = 11;
             this.matricular.Text = "MATRICULAR";
             this.matricular.Click += new System.EventHandler(this.matricular_Click);
@@ -382,7 +386,7 @@
             this.seccion_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.seccion_lbl.BackColor = System.Drawing.Color.Transparent;
             this.seccion_lbl.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seccion_lbl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.seccion_lbl.ForeColor = System.Drawing.SystemColors.Window;
             this.seccion_lbl.Location = new System.Drawing.Point(269, 227);
             this.seccion_lbl.Name = "seccion_lbl";
             this.seccion_lbl.Size = new System.Drawing.Size(46, 18);
@@ -394,7 +398,7 @@
             this.grado_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grado_lbl.BackColor = System.Drawing.Color.Transparent;
             this.grado_lbl.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grado_lbl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.grado_lbl.ForeColor = System.Drawing.SystemColors.Window;
             this.grado_lbl.Location = new System.Drawing.Point(23, 227);
             this.grado_lbl.Name = "grado_lbl";
             this.grado_lbl.Size = new System.Drawing.Size(37, 18);
@@ -406,7 +410,7 @@
             this.telefono_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.telefono_lbl.BackColor = System.Drawing.Color.Transparent;
             this.telefono_lbl.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telefono_lbl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.telefono_lbl.ForeColor = System.Drawing.SystemColors.Window;
             this.telefono_lbl.Location = new System.Drawing.Point(269, 163);
             this.telefono_lbl.Name = "telefono_lbl";
             this.telefono_lbl.Size = new System.Drawing.Size(53, 18);
@@ -418,7 +422,7 @@
             this.dni_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dni_lbl.BackColor = System.Drawing.Color.Transparent;
             this.dni_lbl.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dni_lbl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.dni_lbl.ForeColor = System.Drawing.SystemColors.Window;
             this.dni_lbl.Location = new System.Drawing.Point(23, 163);
             this.dni_lbl.Name = "dni_lbl";
             this.dni_lbl.Size = new System.Drawing.Size(106, 18);
@@ -430,7 +434,7 @@
             this.apoderado_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.apoderado_lbl.BackColor = System.Drawing.Color.Transparent;
             this.apoderado_lbl.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.apoderado_lbl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.apoderado_lbl.ForeColor = System.Drawing.SystemColors.Window;
             this.apoderado_lbl.Location = new System.Drawing.Point(23, 94);
             this.apoderado_lbl.Name = "apoderado_lbl";
             this.apoderado_lbl.Size = new System.Drawing.Size(132, 18);
@@ -442,7 +446,7 @@
             this.apellido_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.apellido_lbl.BackColor = System.Drawing.Color.Transparent;
             this.apellido_lbl.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.apellido_lbl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.apellido_lbl.ForeColor = System.Drawing.SystemColors.Window;
             this.apellido_lbl.Location = new System.Drawing.Point(269, 24);
             this.apellido_lbl.Name = "apellido_lbl";
             this.apellido_lbl.Size = new System.Drawing.Size(148, 18);
@@ -454,7 +458,7 @@
             this.nombre_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nombre_lbl.BackColor = System.Drawing.Color.Transparent;
             this.nombre_lbl.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombre_lbl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.nombre_lbl.ForeColor = System.Drawing.SystemColors.Window;
             this.nombre_lbl.Location = new System.Drawing.Point(23, 24);
             this.nombre_lbl.Name = "nombre_lbl";
             this.nombre_lbl.Size = new System.Drawing.Size(130, 18);
@@ -532,31 +536,27 @@
             this.salir.TabIndex = 28;
             this.salir.Click += new System.EventHandler(this.salir_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Editar
             // 
             this.Editar.Animated = true;
             this.Editar.BackColor = System.Drawing.Color.Transparent;
             this.Editar.BorderRadius = 5;
             this.Editar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Editar.DefaultAutoSize = true;
             this.Editar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Editar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Editar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Editar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Editar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Editar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Editar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Editar.FillColor = System.Drawing.Color.Transparent;
+            this.Editar.FillColor2 = System.Drawing.Color.MediumTurquoise;
             this.Editar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Editar.ForeColor = System.Drawing.Color.White;
             this.Editar.Image = ((System.Drawing.Image)(resources.GetObject("Editar.Image")));
-            this.Editar.Location = new System.Drawing.Point(516, 94);
+            this.Editar.Location = new System.Drawing.Point(530, 95);
             this.Editar.Name = "Editar";
-            this.Editar.Size = new System.Drawing.Size(116, 31);
+            this.Editar.Padding = new System.Windows.Forms.Padding(2);
+            this.Editar.Size = new System.Drawing.Size(98, 30);
             this.Editar.TabIndex = 29;
             this.Editar.Text = "EDITAR";
             // 
@@ -564,6 +564,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(661, 515);
             this.Controls.Add(this.Editar);
             this.Controls.Add(this.salir);
@@ -629,7 +631,6 @@
         private Guna.UI2.WinForms.Guna2TextBox TextBox4;
         private Guna.UI2.WinForms.Guna2TextBox TextBox5;
         private Guna.UI2.WinForms.Guna2GradientButton salir;
-        private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2GradientButton Editar;
     }
 }

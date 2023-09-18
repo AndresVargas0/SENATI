@@ -39,6 +39,9 @@
             this.salir = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer_img = new System.Windows.Forms.Timer(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +50,7 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::Proyecto_Final.Properties.Resources.colegio;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(57, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(57, 8);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(219, 198);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -70,7 +73,7 @@
             this.correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.correo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.correo.IconLeft = ((System.Drawing.Image)(resources.GetObject("correo.IconLeft")));
-            this.correo.Location = new System.Drawing.Point(36, 236);
+            this.correo.Location = new System.Drawing.Point(36, 218);
             this.correo.Name = "correo";
             this.correo.PasswordChar = '\0';
             this.correo.PlaceholderText = "";
@@ -93,7 +96,7 @@
             this.contraseña.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.contraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.contraseña.IconLeft = ((System.Drawing.Image)(resources.GetObject("contraseña.IconLeft")));
-            this.contraseña.Location = new System.Drawing.Point(36, 311);
+            this.contraseña.Location = new System.Drawing.Point(36, 293);
             this.contraseña.Name = "contraseña";
             this.contraseña.PasswordChar = '*';
             this.contraseña.PlaceholderText = "";
@@ -106,7 +109,7 @@
             this.correo_lbl.BackColor = System.Drawing.Color.Transparent;
             this.correo_lbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.correo_lbl.ForeColor = System.Drawing.SystemColors.Window;
-            this.correo_lbl.Location = new System.Drawing.Point(36, 215);
+            this.correo_lbl.Location = new System.Drawing.Point(36, 197);
             this.correo_lbl.Name = "correo_lbl";
             this.correo_lbl.Size = new System.Drawing.Size(65, 18);
             this.correo_lbl.TabIndex = 3;
@@ -117,7 +120,7 @@
             this.contaseña_lbl.BackColor = System.Drawing.Color.Transparent;
             this.contaseña_lbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contaseña_lbl.ForeColor = System.Drawing.SystemColors.Window;
-            this.contaseña_lbl.Location = new System.Drawing.Point(36, 290);
+            this.contaseña_lbl.Location = new System.Drawing.Point(36, 272);
             this.contaseña_lbl.Name = "contaseña_lbl";
             this.contaseña_lbl.Size = new System.Drawing.Size(88, 18);
             this.contaseña_lbl.TabIndex = 4;
@@ -143,7 +146,7 @@
             this.ingresar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ingresar.ForeColor = System.Drawing.Color.White;
             this.ingresar.Image = ((System.Drawing.Image)(resources.GetObject("ingresar.Image")));
-            this.ingresar.Location = new System.Drawing.Point(36, 366);
+            this.ingresar.Location = new System.Drawing.Point(36, 344);
             this.ingresar.Name = "ingresar";
             this.ingresar.Padding = new System.Windows.Forms.Padding(2);
             this.ingresar.Size = new System.Drawing.Size(117, 30);
@@ -171,7 +174,7 @@
             this.salir.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salir.ForeColor = System.Drawing.Color.White;
             this.salir.Image = ((System.Drawing.Image)(resources.GetObject("salir.Image")));
-            this.salir.Location = new System.Drawing.Point(175, 366);
+            this.salir.Location = new System.Drawing.Point(175, 344);
             this.salir.Name = "salir";
             this.salir.Padding = new System.Windows.Forms.Padding(2);
             this.salir.Size = new System.Drawing.Size(89, 30);
@@ -184,7 +187,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Location = new System.Drawing.Point(652, 384);
+            this.label1.Location = new System.Drawing.Point(537, 362);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 21);
             this.label1.TabIndex = 11;
@@ -197,13 +200,41 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Login_Load);
             // 
+            // timer_img
+            // 
+            this.timer_img.Enabled = true;
+            this.timer_img.Interval = 3000;
+            this.timer_img.Tick += new System.EventHandler(this.timer_img_Tick);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.Tag = "";
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "4.jpg");
+            this.imageList1.Images.SetKeyName(1, "3.jpg");
+            this.imageList1.Images.SetKeyName(2, "2.jpg");
+            this.imageList1.Images.SetKeyName(3, "1.jpg");
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ImageKey = "1.jpg";
+            this.label2.ImageList = this.imageList1;
+            this.label2.Location = new System.Drawing.Point(325, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(256, 256);
+            this.label2.TabIndex = 13;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(730, 417);
+            this.ClientSize = new System.Drawing.Size(611, 395);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.salir);
             this.Controls.Add(this.ingresar);
@@ -234,5 +265,8 @@
         private Guna.UI2.WinForms.Guna2GradientButton salir;
         private Guna.UI2.WinForms.Guna2HtmlLabel label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer_img;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label label2;
     }
 }
