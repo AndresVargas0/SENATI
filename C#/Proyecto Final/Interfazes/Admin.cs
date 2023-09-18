@@ -17,59 +17,12 @@ namespace Proyecto_Final.Interfazes
 
         private void Admin_Load(object sender, EventArgs e)
         {
+
         }
-
-        private void eliminar_Click(object sender, EventArgs e)
-        {
-            String Dni = TextBox4.Text;
-
-            ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
-            SqlConnection conn = conexion.ObtenerConexion();
-
-            try
-            {
-                string delete = "DELETE FROM Estudiantes_Matriculados WHERE Dni = @Dni;";
-                SqlCommand command = new SqlCommand(delete, conn);
-
-                command.Parameters.AddWithValue("@Dni", Dni);
-
-                int rowsAffected = command.ExecuteNonQuery();
-
-                if (rowsAffected > 0)
-                {
-                    MessageBox.Show("Estudiante Eliminado");
-                }
-                else
-                {
-                    MessageBox.Show("Error, ese estudiante no Existe en la BD");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al Eliminar: " + ex.Message);
-            }
-        }
-
-        private void actualizar_Click(object sender, EventArgs e)
-        {
-            ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
-            SqlConnection conn = conexion.ObtenerConexion();
-
-            tabla.DataSource = null;
-
-            string selectQuery = "SELECT * FROM Estudiantes_Matriculados";
-            {
-                using (SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, conn))
-                {
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-                    tabla.DataSource = dataTable;
-                }
-            }
-        }
-
+        //Boton Matricular
         private void matricular_Click(object sender, EventArgs e)
         {
+            //Variables a Usar
             string Nombre = TextBox1.Text;
             string Apellido = TextBox2.Text;
             string Apoderado = TextBox3.Text;
@@ -77,7 +30,7 @@ namespace Proyecto_Final.Interfazes
             string Telefono = TextBox5.Text;
             string Grado = ComboBox2.Text;
             string Seccion = ComboBox1.Text;
-
+            //Funcion para Asegurar que lo Campos esten rellenados
             if (string.IsNullOrEmpty(Nombre) ||
                 string.IsNullOrEmpty(Apellido) ||
                 string.IsNullOrEmpty(Dni) ||
@@ -91,14 +44,15 @@ namespace Proyecto_Final.Interfazes
             }
             else
             {
+                //Conexion a BD
                 ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
                 SqlConnection conn = conexion.ObtenerConexion();
-
+                //Verfica la Conexion
                 if (conn != null)
                 {
                     try
                     {
-                        //Insertar Datos
+                        //Consulta para Insertar los Datos de las Variables a la tabla en la BD
                         string query = "INSERT INTO Estudiantes_Matriculados (Nombre,Apellido,Apoderado,Dni,Telefono,Grado,Seccion) VALUES (@Nombre,@Apellido,@Apoderado,@Dni,@Telefono,@Grado,@Seccion)";
 
                         using (SqlCommand command = new SqlCommand(query, conn))
@@ -112,9 +66,9 @@ namespace Proyecto_Final.Interfazes
                             command.Parameters.AddWithValue("@Grado", Grado);
                             command.Parameters.AddWithValue("@Seccion", Seccion);
 
-                            //Muestra las Filas Afectadas
+                            //Verificar Cambios en la Tabla
                             int rowsAffected = command.ExecuteNonQuery();
-
+                            //Mensajes de Confirmacion o Error
                             if (rowsAffected > 0)
                             {
                                 MessageBox.Show("Estudiante Registrado Correctamente");
@@ -123,9 +77,10 @@ namespace Proyecto_Final.Interfazes
                             {
                                 MessageBox.Show("No se Pudo Registrar al Alumno");
                             }
-                            
+
                         }
                     }
+                    //Error Adicional
                     catch (Exception ex)
                     {
                         MessageBox.Show("Error: " + ex.Message);
@@ -133,11 +88,66 @@ namespace Proyecto_Final.Interfazes
                 }
             }
         }
+        //Boton para Actualizar la Tabla
+        private void actualizar_Click(object sender, EventArgs e)
+        {
+            //Conexion a BD
+            ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
+            SqlConnection conn = conexion.ObtenerConexion();
+            //Limpia los Datos de la Tabla
+            tabla.DataSource = null;
+            //Realiza la Consulta para llamar a la Tabla Actualizada
+            string selectQuery = "SELECT * FROM Estudiantes_Matriculados";
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, conn))
+                {
+                    DataTable dataTable = new DataTable();
+                    //Adapta el Contenido Actualizado de la tabla en la BD a la tabla del Admin 
+                    adapter.Fill(dataTable);
+                    tabla.DataSource = dataTable;
+                }
+            }
+        }
+        //Boton Eliminar
+        private void eliminar_Click(object sender, EventArgs e)
+        {
+            //Variable de Referencia
+            string Dni = TextBox4.Text;
 
+            //Conexion a BD
+            ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
+            SqlConnection conn = conexion.ObtenerConexion();
 
+            try
+            {
+                //Consulta para Eliminar
+                string delete = "DELETE FROM Estudiantes_Matriculados WHERE Dni = @Dni;";
+                SqlCommand command = new SqlCommand(delete, conn);
 
+                //Parametros Utilizados
+                command.Parameters.AddWithValue("@Dni", Dni);
+                //Verificar Cambios en la Tabla
+                int rowsAffected = command.ExecuteNonQuery();
+                //Mensajes de Confirmacion o Error
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Estudiante Eliminado");
+                }
+                else
+                {
+                    MessageBox.Show("Error, ese estudiante no Existe en la BD");
+                }
+            }
+            //Error Adicional
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al Eliminar: " + ex.Message);
+            }
+        }
+        //Boton Salir
         private void salir_Click(object sender, EventArgs e)
         {
+            //Cerrar Aplicacion
             Application.Exit();
         }
 
@@ -149,11 +159,6 @@ namespace Proyecto_Final.Interfazes
         private void estudiantesMatriculadosBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            this.Invalidate();
         }
     }
 }
