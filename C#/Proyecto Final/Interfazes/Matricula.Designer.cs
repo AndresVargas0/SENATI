@@ -199,6 +199,7 @@
             // matricular
             // 
             this.matricular.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.matricular.Animated = true;
             this.matricular.BackColor = System.Drawing.Color.Transparent;
             this.matricular.BorderRadius = 5;
             this.matricular.DefaultAutoSize = true;
@@ -346,6 +347,7 @@
             // cerrar
             // 
             this.cerrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cerrar.Animated = true;
             this.cerrar.BackColor = System.Drawing.Color.Transparent;
             this.cerrar.BorderRadius = 5;
             this.cerrar.DefaultAutoSize = true;
