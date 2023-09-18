@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Final.Metodos;
+using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -11,9 +12,9 @@ namespace Proyecto_Final.Interfazes
             InitializeComponent();
         }
 
-        private void CRUD_Estudiantes_Load(object sender, EventArgs e)
+        public void CRUD_Estudiantes_Load(object sender, EventArgs e)
         {
-       
+            
         }
 
         private void matricular_Click(object sender, EventArgs e)

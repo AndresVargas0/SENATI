@@ -47,6 +47,7 @@
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::Proyecto_Final.Properties.Resources.colegio;
             this.guna2PictureBox1.ImageRotate = 0F;
@@ -59,6 +60,7 @@
             // 
             // correo
             // 
+            this.correo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.correo.BackColor = System.Drawing.Color.Transparent;
             this.correo.BorderColor = System.Drawing.Color.White;
             this.correo.BorderRadius = 8;
@@ -83,6 +85,7 @@
             // 
             // contraseña
             // 
+            this.contraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.contraseña.BackColor = System.Drawing.Color.Transparent;
             this.contraseña.BorderColor = System.Drawing.Color.White;
             this.contraseña.BorderRadius = 8;
@@ -106,6 +109,7 @@
             // 
             // correo_lbl
             // 
+            this.correo_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.correo_lbl.BackColor = System.Drawing.Color.Transparent;
             this.correo_lbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.correo_lbl.ForeColor = System.Drawing.SystemColors.Window;
@@ -117,6 +121,7 @@
             // 
             // contaseña_lbl
             // 
+            this.contaseña_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.contaseña_lbl.BackColor = System.Drawing.Color.Transparent;
             this.contaseña_lbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contaseña_lbl.ForeColor = System.Drawing.SystemColors.Window;
@@ -128,6 +133,7 @@
             // 
             // ingresar
             // 
+            this.ingresar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ingresar.Animated = true;
             this.ingresar.BackColor = System.Drawing.Color.Transparent;
             this.ingresar.BorderColor = System.Drawing.Color.LightSteelBlue;
@@ -156,6 +162,7 @@
             // 
             // salir
             // 
+            this.salir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.salir.Animated = true;
             this.salir.BackColor = System.Drawing.Color.Transparent;
             this.salir.BorderColor = System.Drawing.Color.LightSteelBlue;
@@ -184,6 +191,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;

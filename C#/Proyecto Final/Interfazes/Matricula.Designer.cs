@@ -371,6 +371,7 @@
             // 
             // guna2CirclePictureBox1
             // 
+            this.guna2CirclePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.BackgroundImage = global::Proyecto_Final.Properties.Resources.colegio;
             this.guna2CirclePictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
