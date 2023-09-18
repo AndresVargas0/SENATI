@@ -65,7 +65,6 @@ namespace Proyecto_Final.Interfazes
                             command.Parameters.AddWithValue("@Telefono", Telefono);
                             command.Parameters.AddWithValue("@Grado", Grado);
                             command.Parameters.AddWithValue("@Seccion", Seccion);
-
                             //Verificar Cambios en la Tabla
                             int rowsAffected = command.ExecuteNonQuery();
                             //Mensajes de Confirmacion o Error
