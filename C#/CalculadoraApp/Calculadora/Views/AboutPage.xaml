@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?Contenido de la Pagina?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.Views.AboutPage"
+             Title="Calculadora"
+             BackgroundColor="#2a2e37">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#000</Color>
+        </ResourceDictionary>
+    
+</ContentPage>
