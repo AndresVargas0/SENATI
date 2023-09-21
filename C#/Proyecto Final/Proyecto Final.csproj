@@ -144,13 +144,16 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\user.png" />
     <None Include="Resources\1486564399-close_81512.png" />
     <None Include="Resources\1.jpg" />
     <None Include="Resources\1432525.png" />
+    <None Include="Resources\1.png" />
     <Content Include="Resources\1540486907gtJMyRGg.jpg" />
     <None Include="Resources\campos.png" />
     <None Include="Resources\2546705.png" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\bglogin.jpg" />
+    <None Include="Resources\bg-icon-box5.jpg" />
     <Content Include="Resources\cerrar.png" />
     <Content Include="Resources\colegio.jpg" />
     <None Include="Resources\editar.png" />

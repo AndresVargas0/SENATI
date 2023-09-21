@@ -156,7 +156,7 @@
             this.ingresar.Name = "ingresar";
             this.ingresar.Padding = new System.Windows.Forms.Padding(2);
             this.ingresar.Size = new System.Drawing.Size(117, 30);
-            this.ingresar.TabIndex = 8;
+            this.ingresar.TabIndex = 3;
             this.ingresar.Text = "INGRESAR";
             this.ingresar.Click += new System.EventHandler(this.ingresar_Click);
             // 
@@ -185,7 +185,7 @@
             this.salir.Name = "salir";
             this.salir.Padding = new System.Windows.Forms.Padding(2);
             this.salir.Size = new System.Drawing.Size(89, 30);
-            this.salir.TabIndex = 9;
+            this.salir.TabIndex = 4;
             this.salir.Text = "SALIR";
             this.salir.Click += new System.EventHandler(this.salir_Click);
             // 
@@ -238,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Proyecto_Final.Properties.Resources.bglogin;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(611, 395);
             this.Controls.Add(this.label2);
@@ -250,6 +250,7 @@
             this.Controls.Add(this.contraseña);
             this.Controls.Add(this.correo);
             this.Controls.Add(this.guna2PictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
