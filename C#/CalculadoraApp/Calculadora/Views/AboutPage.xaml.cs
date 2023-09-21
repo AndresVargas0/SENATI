@@ -23,6 +23,14 @@ namespace Calculadora.Views
             resultEntry.Text = currentInput;
         }
 
-       
+        void ClearClicked(object sender, EventArgs e)
+        {
+            currentInput = string.Empty;
+            firstNumber = 0;
+            selectedOperator = string.Empty;
+            resultEntry.Text = string.Empty;
+        }
+
+        
     }
 }
