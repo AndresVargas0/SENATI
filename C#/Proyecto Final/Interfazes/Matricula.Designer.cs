@@ -212,7 +212,7 @@
             this.matricular.FillColor2 = System.Drawing.Color.DarkGreen;
             this.matricular.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matricular.ForeColor = System.Drawing.Color.White;
-            this.matricular.Image = ((System.Drawing.Image)(resources.GetObject("matricular.Image")));
+            this.matricular.Image = global::Proyecto_Final.Properties.Resources.matricular;
             this.matricular.Location = new System.Drawing.Point(572, 246);
             this.matricular.Name = "matricular";
             this.matricular.Padding = new System.Windows.Forms.Padding(2);
@@ -360,7 +360,7 @@
             this.cerrar.FillColor2 = System.Drawing.Color.DarkRed;
             this.cerrar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cerrar.ForeColor = System.Drawing.Color.White;
-            this.cerrar.Image = ((System.Drawing.Image)(resources.GetObject("cerrar.Image")));
+            this.cerrar.Image = global::Proyecto_Final.Properties.Resources._1486564399_close_81512;
             this.cerrar.Location = new System.Drawing.Point(584, 296);
             this.cerrar.Name = "cerrar";
             this.cerrar.Padding = new System.Windows.Forms.Padding(2);

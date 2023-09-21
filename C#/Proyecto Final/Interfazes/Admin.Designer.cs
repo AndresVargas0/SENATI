@@ -194,7 +194,7 @@
             this.actualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.actualizar.Animated = true;
             this.actualizar.BackColor = System.Drawing.Color.Transparent;
-            this.actualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("actualizar.BackgroundImage")));
+            this.actualizar.BackgroundImage = global::Proyecto_Final.Properties.Resources._2546705;
             this.actualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.actualizar.BorderRadius = 5;
             this.actualizar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -230,7 +230,7 @@
             this.eliminar.FillColor2 = System.Drawing.Color.Silver;
             this.eliminar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminar.ForeColor = System.Drawing.Color.White;
-            this.eliminar.Image = ((System.Drawing.Image)(resources.GetObject("eliminar.Image")));
+            this.eliminar.Image = global::Proyecto_Final.Properties.Resources.eliminar;
             this.eliminar.Location = new System.Drawing.Point(516, 141);
             this.eliminar.Name = "eliminar";
             this.eliminar.Padding = new System.Windows.Forms.Padding(2);
@@ -256,7 +256,7 @@
             this.matricular.FillColor2 = System.Drawing.Color.LimeGreen;
             this.matricular.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matricular.ForeColor = System.Drawing.Color.White;
-            this.matricular.Image = ((System.Drawing.Image)(resources.GetObject("matricular.Image")));
+            this.matricular.Image = global::Proyecto_Final.Properties.Resources.matricular;
             this.matricular.Location = new System.Drawing.Point(495, 48);
             this.matricular.Name = "matricular";
             this.matricular.Padding = new System.Windows.Forms.Padding(2);
@@ -523,7 +523,7 @@
             this.salir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.salir.Animated = true;
             this.salir.BackColor = System.Drawing.Color.Transparent;
-            this.salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("salir.BackgroundImage")));
+            this.salir.BackgroundImage = global::Proyecto_Final.Properties.Resources._1486564399_close_81512;
             this.salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.salir.BorderRadius = 5;
             this.salir.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -559,7 +559,7 @@
             this.Editar.FillColor2 = System.Drawing.Color.MediumTurquoise;
             this.Editar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Editar.ForeColor = System.Drawing.Color.White;
-            this.Editar.Image = ((System.Drawing.Image)(resources.GetObject("Editar.Image")));
+            this.Editar.Image = global::Proyecto_Final.Properties.Resources.editar;
             this.Editar.Location = new System.Drawing.Point(530, 95);
             this.Editar.Name = "Editar";
             this.Editar.Padding = new System.Windows.Forms.Padding(2);
@@ -571,7 +571,7 @@
             // 
             this.informe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.informe.BackColor = System.Drawing.Color.Transparent;
-            this.informe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("informe.BackgroundImage")));
+            this.informe.BackgroundImage = global::Proyecto_Final.Properties.Resources.campos;
             this.informe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.informe.Location = new System.Drawing.Point(553, 235);
             this.informe.Name = "informe";

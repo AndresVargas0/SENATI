@@ -40,8 +40,8 @@
             this.label1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer_img = new System.Windows.Forms.Timer(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             this.correo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.correo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.correo.IconLeft = ((System.Drawing.Image)(resources.GetObject("correo.IconLeft")));
+            this.correo.IconLeft = global::Proyecto_Final.Properties.Resources.user;
             this.correo.Location = new System.Drawing.Point(36, 218);
             this.correo.Name = "correo";
             this.correo.PasswordChar = '\0';
@@ -98,7 +98,7 @@
             this.contraseña.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.contraseña.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.contraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.contraseña.IconLeft = ((System.Drawing.Image)(resources.GetObject("contraseña.IconLeft")));
+            this.contraseña.IconLeft = global::Proyecto_Final.Properties.Resources.pass;
             this.contraseña.Location = new System.Drawing.Point(36, 293);
             this.contraseña.Name = "contraseña";
             this.contraseña.PasswordChar = '*';
@@ -151,7 +151,7 @@
             this.ingresar.FocusedColor = System.Drawing.Color.Transparent;
             this.ingresar.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ingresar.ForeColor = System.Drawing.Color.White;
-            this.ingresar.Image = ((System.Drawing.Image)(resources.GetObject("ingresar.Image")));
+            this.ingresar.Image = global::Proyecto_Final.Properties.Resources._1432525;
             this.ingresar.Location = new System.Drawing.Point(36, 344);
             this.ingresar.Name = "ingresar";
             this.ingresar.Padding = new System.Windows.Forms.Padding(2);
@@ -180,7 +180,7 @@
             this.salir.FocusedColor = System.Drawing.Color.Transparent;
             this.salir.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salir.ForeColor = System.Drawing.Color.White;
-            this.salir.Image = ((System.Drawing.Image)(resources.GetObject("salir.Image")));
+            this.salir.Image = global::Proyecto_Final.Properties.Resources._1486564399_close_81512;
             this.salir.Location = new System.Drawing.Point(175, 344);
             this.salir.Name = "salir";
             this.salir.Padding = new System.Windows.Forms.Padding(2);
@@ -214,26 +214,25 @@
             this.timer_img.Interval = 3000;
             this.timer_img.Tick += new System.EventHandler(this.timer_img_Tick);
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.Tag = "";
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "4.jpg");
-            this.imageList1.Images.SetKeyName(1, "3.jpg");
-            this.imageList1.Images.SetKeyName(2, "2.jpg");
-            this.imageList1.Images.SetKeyName(3, "1.jpg");
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ImageKey = "1.jpg";
             this.label2.ImageList = this.imageList1;
-            this.label2.Location = new System.Drawing.Point(325, 42);
+            this.label2.Location = new System.Drawing.Point(321, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(256, 256);
             this.label2.TabIndex = 13;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "4.jpg");
+            this.imageList1.Images.SetKeyName(1, "3.jpg");
+            this.imageList1.Images.SetKeyName(2, "2.jpg");
+            this.imageList1.Images.SetKeyName(3, "1.jpg");
             // 
             // Login
             // 
@@ -274,7 +273,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer_img;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
