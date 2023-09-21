@@ -31,6 +31,36 @@ namespace Calculadora.Views
             resultEntry.Text = string.Empty;
         }
 
-        
+        void CalculateClicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(currentInput) && !string.IsNullOrEmpty(selectedOperator))
+            {
+                double secondNumber = double.Parse(currentInput);
+                double result = 0;
+
+                switch (selectedOperator)
+                {
+                    case "+":
+                        result = firstNumber + secondNumber;
+                        break;
+                    case "-":
+                        result = firstNumber - secondNumber;
+                        break;
+                    case "*":
+                        result = firstNumber * secondNumber;
+                        break;
+                    case "/":
+                        if (secondNumber != 0)
+                            result = firstNumber / secondNumber;
+                        else
+                            resultEntry.Text = "Error";
+                        break;
+                }
+                resultEntry.Text = result.ToString();
+                currentInput = result.ToString();
+                firstNumber = result;
+                selectedOperator = string.Empty;
+            }
+        }
     }
 }
