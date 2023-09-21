@@ -569,12 +569,15 @@
             // 
             // informe
             // 
-            this.informe.Location = new System.Drawing.Point(530, 251);
+            this.informe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.informe.BackColor = System.Drawing.Color.Transparent;
+            this.informe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("informe.BackgroundImage")));
+            this.informe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.informe.Location = new System.Drawing.Point(553, 235);
             this.informe.Name = "informe";
-            this.informe.Size = new System.Drawing.Size(72, 35);
+            this.informe.Size = new System.Drawing.Size(34, 35);
             this.informe.TabIndex = 30;
-            this.informe.Text = "INFORME";
-            this.informe.UseVisualStyleBackColor = true;
+            this.informe.UseVisualStyleBackColor = false;
             this.informe.Click += new System.EventHandler(this.informe_Click);
             // 
             // Admin
