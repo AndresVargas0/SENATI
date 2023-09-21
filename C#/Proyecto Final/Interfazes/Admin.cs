@@ -44,46 +44,41 @@ namespace Proyecto_Final.Interfazes
             }
             else
             {
-                //Conexion a BD
-                ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
-                SqlConnection conn = conexion.ObtenerConexion();
-                //Verfica la Conexion
-                if (conn != null)
+            //Conexion a BD
+            ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
+            SqlConnection conn = conexion.ObtenerConexion();
+                try
                 {
-                    try
+                    //Consulta para Insertar los Datos de las Variables a la tabla en la BD
+                    string query = "INSERT INTO Estudiantes_Matriculados (Nombre,Apellido,Apoderado,Dni,Telefono,Grado,Seccion) VALUES (@Nombre,@Apellido,@Apoderado,@Dni,@Telefono,@Grado,@Seccion)";
+                    using (SqlCommand command = new SqlCommand(query, conn))
                     {
-                        //Consulta para Insertar los Datos de las Variables a la tabla en la BD
-                        string query = "INSERT INTO Estudiantes_Matriculados (Nombre,Apellido,Apoderado,Dni,Telefono,Grado,Seccion) VALUES (@Nombre,@Apellido,@Apoderado,@Dni,@Telefono,@Grado,@Seccion)";
-
-                        using (SqlCommand command = new SqlCommand(query, conn))
+                        //Parametros a usar en la Consulta
+                        command.Parameters.AddWithValue("@Nombre", Nombre);
+                        command.Parameters.AddWithValue("@Apellido", Apellido);
+                        command.Parameters.AddWithValue("@Apoderado", Apoderado);
+                        command.Parameters.AddWithValue("@Dni", Dni);
+                        command.Parameters.AddWithValue("@Telefono", Telefono);
+                        command.Parameters.AddWithValue("@Grado", Grado);
+                        command.Parameters.AddWithValue("@Seccion", Seccion);
+                        //Verificar Cambios en la Tabla
+                        int rowsAffected = command.ExecuteNonQuery();
+                        //Mensajes de Confirmacion o Error
+                        if (rowsAffected > 0)
                         {
-                            //Parametros a usar en la Consulta
-                            command.Parameters.AddWithValue("@Nombre", Nombre);
-                            command.Parameters.AddWithValue("@Apellido", Apellido);
-                            command.Parameters.AddWithValue("@Apoderado", Apoderado);
-                            command.Parameters.AddWithValue("@Dni", Dni);
-                            command.Parameters.AddWithValue("@Telefono", Telefono);
-                            command.Parameters.AddWithValue("@Grado", Grado);
-                            command.Parameters.AddWithValue("@Seccion", Seccion);
-                            //Verificar Cambios en la Tabla
-                            int rowsAffected = command.ExecuteNonQuery();
-                            //Mensajes de Confirmacion o Error
-                            if (rowsAffected > 0)
-                            {
-                                MessageBox.Show("Estudiante Registrado Correctamente");
-                            }
-                            else
-                            {
-                                MessageBox.Show("No se Pudo Registrar al Alumno");
-                            }
+                            MessageBox.Show("Estudiante Registrado Correctamente");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se Pudo Registrar al Alumno");
 
                         }
                     }
-                    //Error Adicional
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error: " + ex.Message);
-                    }
+                }
+                //Error Adicional
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
                 }
             }
         }
@@ -146,8 +141,10 @@ namespace Proyecto_Final.Interfazes
         //Boton Salir
         private void salir_Click(object sender, EventArgs e)
         {
-            //Cerrar Aplicacion
-            Application.Exit();
+            //Cerrar Ventana y Regregsar al Login
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
 
         private void tabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -158,6 +155,46 @@ namespace Proyecto_Final.Interfazes
         private void estudiantesMatriculadosBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void informe_Click(object sender, EventArgs e)
+        {
+            //Conexion a BD
+            ConexionDB.ConexionDB conexion = new ConexionDB.ConexionDB();
+            SqlConnection conn = conexion.ObtenerConexion();
+            //Consulta para Seleccionar todos los Registros de la Tabla de la BD
+            string query = "SELECT * FROM Estudiantes_Matriculados";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            //El SqlDataReader lee el Contenido de los Registros de la Tabla
+            SqlDataReader reader = cmd.ExecuteReader();
+            //Pasamos el Argumento creado con SqlDataReader
+            GenerarInforme(reader);
+            //Cerramos la Conexion a la BD
+            reader.Close();
+        }
+
+        static void GenerarInforme(SqlDataReader reader)
+        {
+            //Inicia un Bucle que Recorre cada Fila de Resultados Existentes en la Tabla
+            while (reader.Read())
+            {
+                //Cada String obtiene el valor de cada Columna Asignada
+                string Nombre = reader.GetString(0);
+                string Apellido = reader.GetString(1);
+                string Apoderado = reader.GetString(2);
+                string Dni = reader.GetString(3);
+                string Telefono = reader.GetString(4);
+                string Grado = reader.GetString(5);
+                string Seccion = reader.GetString(6);
+                //Imprime los Valores Obtenidos por Consola
+                Console.WriteLine($"\nNOMBRE: {Nombre}\n"+
+                    $"APELLIDO: {Apellido}\n"+
+                    $"APODERADO: {Apoderado}\n"+
+                    $"DNI: {Dni}\n" +
+                    $"TELEFONO: {Telefono}\n" +
+                    $"GRADO: {Grado}\n" +
+                    $"SECCION: {Seccion}\n");
+            }
         }
     }
 }

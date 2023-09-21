@@ -63,6 +63,7 @@
             this.TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.salir = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Editar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.informe = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.estudiantesMatriculadosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).BeginInit();
@@ -566,6 +567,16 @@
             this.Editar.TabIndex = 29;
             this.Editar.Text = "EDITAR";
             // 
+            // informe
+            // 
+            this.informe.Location = new System.Drawing.Point(530, 251);
+            this.informe.Name = "informe";
+            this.informe.Size = new System.Drawing.Size(72, 35);
+            this.informe.TabIndex = 30;
+            this.informe.Text = "INFORME";
+            this.informe.UseVisualStyleBackColor = true;
+            this.informe.Click += new System.EventHandler(this.informe_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -573,6 +584,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(661, 515);
+            this.Controls.Add(this.informe);
             this.Controls.Add(this.Editar);
             this.Controls.Add(this.salir);
             this.Controls.Add(this.ComboBox2);
@@ -638,5 +650,6 @@
         private Guna.UI2.WinForms.Guna2TextBox TextBox5;
         private Guna.UI2.WinForms.Guna2GradientButton salir;
         private Guna.UI2.WinForms.Guna2GradientButton Editar;
+        private System.Windows.Forms.Button informe;
     }
 }

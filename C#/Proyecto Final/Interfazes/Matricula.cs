@@ -85,8 +85,10 @@ namespace Proyecto_Final.Interfazes
 
         private void cerrar_Click(object sender, EventArgs e)
         {
-            //Cerrar Aplicacion
-            Application.Exit();
+            //Cerrar Ventana y Regresar al Login
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
 
         private void nombre_TextChanged(object sender, EventArgs e)
