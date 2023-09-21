@@ -608,7 +608,7 @@
             this.Controls.Add(this.eliminar);
             this.Controls.Add(this.actualizar);
             this.Controls.Add(this.tabla);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

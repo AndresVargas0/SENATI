@@ -413,11 +413,11 @@
             this.Controls.Add(this.TextBox4);
             this.Controls.Add(this.TextBox5);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Matricula_Estudiantes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Matricula_Estudiantes";
+            this.Text = " Matricular Estudiantes";
             this.Load += new System.EventHandler(this.CRUD_Estudiantes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
