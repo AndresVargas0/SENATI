@@ -46,7 +46,8 @@ namespace Proyecto_Final.Interfazes
                 try
                 {
                     //Consulta para Insertar los Datos de las Variables a la tabla en la BD
-                    string query = "INSERT INTO Estudiantes_Matriculados (Nombre,Apellido,Apoderado,Dni,Telefono,Grado,Seccion) VALUES (@Nombre,@Apellido,@Apoderado,@Dni,@Telefono,@Grado,@Seccion)";
+                    string query = "INSERT INTO Estudiantes_Matriculados (Nombre,Apellido,Apoderado,Dni,Telefono,Grado,Seccion)" +
+                        "VALUES (@Nombre,@Apellido,@Apoderado,@Dni,@Telefono,@Grado,@Seccion)";
                     using (SqlCommand command = new SqlCommand(query, conn))
                     {
                         //Parametros a usar en la Consulta

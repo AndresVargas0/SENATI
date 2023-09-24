@@ -12,3 +12,6 @@ C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\x64\Release\Proy
 C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\x64\Release\Proyecto Final.csproj.CopyComplete
 C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\x64\Release\Proyecto Final.exe
 C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\obj\x64\Release\Proyecto Final.pdb
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\bin\x64\Release\BouncyCastle.Crypto.dll
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\bin\x64\Release\itextsharp.dll
+C:\Users\Hxruo\OneDrive\Escritorio\SENATI\C#\Proyecto Final\bin\x64\Release\itextsharp.xml

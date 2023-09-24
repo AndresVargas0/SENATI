@@ -566,6 +566,7 @@
             this.Editar.Size = new System.Drawing.Size(98, 30);
             this.Editar.TabIndex = 29;
             this.Editar.Text = "EDITAR";
+            this.Editar.Click += new System.EventHandler(this.Editar_Click);
             // 
             // informe
             // 
